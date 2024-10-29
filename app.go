@@ -124,13 +124,20 @@ func main() {
 		}
 		return c.JSON(result)
 	})
-	log.Fatal(app.Listen(":3233"))
+	port := os.Getenv("MDICT_PORT")
+	if port == "" {
+		port = "3233"
+	}
+	log.Fatal(app.Listen(fmt.Sprintf(":%s", port)))
 }
 func RegisterDicts() {
 	es := os.Getenv("MDICT_PATH")
 	if len(es) == 0 {
 		wd, _ := os.Getwd()
 		es = filepath.Join(wd, "dicts")
+		fmt.Printf("use %s as default dicts path\n", es)
+	} else {
+		fmt.Printf("use %s as dicts path\n", es)
 	}
 
 	files, err := os.ReadDir(es)
@@ -229,7 +236,7 @@ func RegisterDicts() {
 
 				content = fontReg.ReplaceAllString(content, `url("/resources/dicts/`+dict.ID+`?path=$1")`)
 				content = cssReg.ReplaceAllString(content, `href="/resources/dicts/`+dict.ID+`?path=$1"`)
-				content = entryReg.ReplaceAllString(content, `href="/word?id=$1&dict_id=`+dict.ID+`" data-entry="`+dict.ID+`-$1"`)
+				content = entryReg.ReplaceAllString(content, fmt.Sprintf(`href="/word?id=$1&dict_id=%s" data-entry="$1" data-dict="%s"`, dict.ID, dict.ID))
 				content = imageReg.ReplaceAllString(content, `src="/resources/dicts/`+dict.ID+`?path=$1"`)
 				content = jsReg.ReplaceAllString(content, `src="/resources/dicts/`+dict.ID+`?path=$1"`)
 				content = audioReg.ReplaceAllString(content, `href="/resources/dicts/`+dict.ID+`?path=$1"`)
