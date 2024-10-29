@@ -1,0 +1,41 @@
+/*
+
+【爱知大学】中日大辞典第三版 - FORUM.FREEMDICT.COM 原创发布
+
+仅供个人学习使用，禁止再次传播、禁止用于任何盈利目的。
+
+https://forum.freemdict.com/t/topic/9289
+
+*/
+
+.dict-az * {
+	font-family:"FZYaSong GBK";
+	font-size: 26px !important;
+}
+
+.dict-az .freemdict { display: none !important ;}  /*请勿修改*/
+
+
+.dict-az .hanyu_des {
+    color: #840ff1;
+}
+
+.dict-az .midasi {
+	color:red;
+	padding-bottom: 5px;
+}
+
+.dict-az .title_pin {
+    color: #0000FF;
+	padding-left:6px;
+}
+
+.dict-az .imi {
+	/*释义*/
+	padding: 3px;
+}
+
+.dict-az .reibun {
+	/*例句*/
+	padding: 3px;
+}

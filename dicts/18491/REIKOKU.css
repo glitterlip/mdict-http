@@ -1,0 +1,171 @@
+.dict-jjxx  body {
+    margin-left: 0.5em;
+}
+
+.dict-jjxx  header {
+    margin-top: 0.3em;
+    margin-bottom: 0.2em;
+}
+
+.dict-jjxx  headword {
+    font-size: 1.3em;
+}
+
+.dict-jjxx  headword.kana {
+    font-weight: bold;
+}
+
+.dict-jjxx  headword.kana.red {
+    color: #b62d82;
+}
+
+.dict-jjxx  div.meaning {
+    margin-left: 1em;
+    margin-top: 0.1em;
+}
+
+.dict-jjxx  hinshi {
+    display: inline-block;
+    width: fit-content;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0em 0.2em;
+    font-size: 0.8em;
+    vertical-align: 0.1em;
+    margin: 0em 0.3em 0em 0.6em;
+}
+
+.dict-jjxx  fbox.例,
+.dict-jjxx  fbox.対,
+.dict-jjxx  fbox.類 {
+    background-color: #808080;
+    color: white;
+    display: inline-block;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 0em 0.2em;
+    font-size: 0.8em;
+    margin-right: 0.2em;
+    margin-left: 0.3em;
+    vertical-align: 0.1em;
+}
+
+.dict-jjxx  fbox.fbox2 {
+    background-color: #55bcf9;
+    color: white;
+    display: inline-block;
+    width: fit-content;
+    border-radius: 1em;
+    padding: 0.1em 0.3em;
+    font-size: 0.8em;
+    margin-top: 0.6em;
+    margin-left: 0.5em;
+    margin-right: 0.3em;
+    vertical-align: 0.1em;
+}
+
+.dict-jjxx  fbox.fbox2[href$="#成句"] {
+    background-color: white;
+    color: #55bcf9;
+    display: inline-block;
+    width: fit-content;
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 1em;
+    padding: 0em 0.2em;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    margin-right: 0.3em;
+    vertical-align: 0.1em;
+}
+
+.dict-jjxx  kanji > fbox {
+    background-color: #808080;
+    color: white;
+    display: inline-block;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 0em 0.2em;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    margin-right: 0.2em;
+    vertical-align: 1px;
+}
+
+.dict-jjxx  kanji {
+    font-size: 0.9em;
+    color: #222222;
+}
+
+.dict-jjxx  a {
+    text-decoration: none;
+}
+
+.dict-jjxx  fbox.fbox2:after {
+    content: "►";
+}
+
+.dict-jjxx  fbox.fbox2[href$="#成句"]:after {
+    content: none;
+}
+
+.dict-jjxx  table {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    border-spacing: 3px;
+}
+
+.dict-jjxx  table caption {
+    font-size: 0.9em;
+}
+
+.dict-jjxx  table caption span.red {
+    font-size: 1.0em;
+    color: #246c77;
+}
+
+.dict-jjxx  tbody {
+    display: block;
+    margin-top: 0em;
+}
+
+.dict-jjxx  th {
+    background-color: #badfe5;
+}
+
+.dict-jjxx  td {
+    background-color: #d6eef2;
+}
+
+.dict-jjxx  th, td {
+    padding: 1em 0.5em 0.5em 0.5em;
+}
+
+.dict-jjxx  bss {
+    color: #377e21;
+}
+
+.dict-jjxx  u {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*因为缺少资料无法正常显示的内容，均做隐藏处理*/
+.dict-jjxx  img {
+    display: none;
+}
+
+.dict-jjxx  fbox[href$="分類"] {
+    display: none;
+}
+
+.dict-jjxx  a[href^="category"] {
+    display: none;
+}
+
+.dict-jjxx  div.strokes {
+    display: none;
+}
+

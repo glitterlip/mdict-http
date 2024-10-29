@@ -1,0 +1,611 @@
+@font-face {
+    font-family: jpgothic;
+    src: local("Noto Sans CJK JP"), local("IPAexGothic"), local("Source Han Sans JP");
+}
+
+@font-face {
+    font-family: jpmincho;
+    src: local("Noto Serif CJK JP"), local("IPAexMincho"), local("IPAmjMincho"), local("Source Han Serif JP"), local("HanaMinA"), local("HanaMinB");
+}
+
+@font-face {
+    font-family: jpkyokasho;
+    src: local("A-OTF Kyoukasho ICA Pro R"), local("DFKyoKaSho-W4");
+}
+
+.dict-skk8  body {
+    /*margin: 0em 1em;*/
+    line-height: 1.5em;
+    font-family: jpmincho, serif;
+    /*font-size: 1.2em;*/
+    font-size: 1em;
+}
+
+.dict-skk8  span[data-name="entry-index"] > a {
+    display: none;
+}
+
+.dict-skk8  span[data-name="項目"] {
+    display: block;
+    /*max-width: 39em;*/
+}
+
+.dict-skk8  span[data-name="見出部"] {
+    display: block;
+}
+
+.dict-skk8  span[data-name="見出仮名"] {
+    font-family: jpgothic, sans-serif;
+    font-weight: bold;
+}
+
+.dict-skk8  span[data-name="見出仮名"].アンチック {
+    font-family: jpmincho, serif;
+}
+
+.dict-skk8  span[data-name="表記G"] {
+    margin-left: 0.25em;
+}
+
+.dict-skk8  span[data-name="専門G"] {
+    margin-right: 0.25em;
+}
+
+.dict-skk8  span[data-name="常用漢字"] {
+    font-family: jpmincho, serif;
+}
+
+.dict-skk8  span[data-name="教育漢字"] {
+    font-family: jpkyokasho, jpmincho, serif;
+    color: green;
+}
+
+.dict-skk8  span[data-name="解説部"],
+.dict-skk8  span[data-name="子解説部"],
+.dict-skk8  span[data-name="句解説部"] {
+    display: block;
+    margin-left: 1em;
+}
+
+.dict-skk8  span[data-name="大語義"] {
+    display: block;
+}
+
+.dict-skk8  span[data-name="大語義"] + span[data-name="大語義"] {
+    margin-top: 0.5em;
+}
+
+.dict-skk8  span[data-name="大語義番号"] {
+    margin-right: 0.25em;
+    padding: 0.1em;
+    font-family: jpgothic, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    background-color: gray;
+    border-radius: 0.2em;
+}
+
+.dict-skk8  a span[data-name="大語義番号"] {
+    background-color: blue;
+    text-decoration-color: blue;
+}
+
+.dict-skk8  span[data-name="語義番号"] {
+    margin-right: 0.25em;
+}
+
+.dict-skk8  span[data-name="参照語義番号"] {
+    margin-left: 0.1em;
+}
+
+.dict-skk8  span[data-name="参照語義番号"] > span[data-name="語義番号"] {
+    margin-right: 0.1em;
+}
+
+.dict-skk8  span[data-name="参照語義番号"]:first-child {
+    margin-left: 0em;
+}
+
+.dict-skk8  span[data-name="語義"] {
+    display: block;
+}
+
+.dict-skk8  span[data-name="副義"] {
+    display: block;
+    margin-left: 1.0em;
+}
+
+.dict-skk8  span[data-name="注記語義"] {
+    margin-left: 0.5em;
+}
+
+.dict-skk8  span[data-name="語釈"] {
+}
+
+.dict-skk8  span[data-name="用例G"] {
+    display: block;
+    /*margin-left: 1.25em;*/
+}
+
+.dict-skk8  span[data-name="百科"] span[data-name="用例G"] {
+    display: inline;
+}
+
+.dict-skk8  span[data-name="注記"] span[data-name="用例G"] {
+    display: inline;
+}
+
+.dict-skk8  span[data-name="用例"] {
+}
+
+.dict-skk8  span[data-name="見出相当部"] {
+    margin-left: 0.125em;
+    margin-right: 0.125em;
+}
+
+.dict-skk8  span[data-name="ルビG"] {
+    font-size: 0.7em;
+    font-weight: normal;
+    vertical-align: 0.5em;
+    -webkit-user-select: none;
+}
+
+.dict-skk8  span[data-name="名詞形G"],
+.dict-skk8  span[data-name="動詞形G"],
+.dict-skk8  span[data-name="自動詞形G"],
+.dict-skk8  span[data-name="他動詞形G"],
+.dict-skk8  span[data-name="可能形G"],
+.dict-skk8  span[data-name="人G"],
+.dict-skk8  span[data-name="名詞人形G"] {
+    display: block;
+}
+
+.dict-skk8  span[data-name="語義"] span[data-name="名詞形G"],
+.dict-skk8  span[data-name="語義"] span[data-name="動詞形G"],
+.dict-skk8  span[data-name="語義"] span[data-name="自動詞形G"],
+.dict-skk8  span[data-name="語義"] span[data-name="他動詞形G"],
+.dict-skk8  span[data-name="語義"] span[data-name="可能形G"],
+.dict-skk8  span[data-name="語義"] span[data-name="人G"] {
+    display: inline;
+}
+
+.dict-skk8  span[data-name="副義"] span[data-name="名詞形G"],
+.dict-skk8  span[data-name="副義"] span[data-name="動詞形G"],
+.dict-skk8  span[data-name="副義"] span[data-name="自動詞形G"],
+.dict-skk8  span[data-name="副義"] span[data-name="他動詞形G"],
+.dict-skk8  span[data-name="副義"] span[data-name="可能形G"],
+.dict-skk8  span[data-name="副義"] span[data-name="人G"] {
+    display: inline;
+}
+
+.dict-skk8  span[data-name="注記"] span[data-name="名詞形G"],
+.dict-skk8  span[data-name="注記"] span[data-name="動詞形G"],
+.dict-skk8  span[data-name="注記"] span[data-name="自動詞形G"],
+.dict-skk8  span[data-name="注記"] span[data-name="他動詞形G"],
+.dict-skk8  span[data-name="注記"] span[data-name="可能形G"],
+.dict-skk8  span[data-name="注記"] span[data-name="人G"] {
+    display: inline;
+}
+
+.dict-skk8  span[data-name="共通"] span[data-name="名詞形G"],
+.dict-skk8  span[data-name="共通"] span[data-name="動詞形G"],
+.dict-skk8  span[data-name="共通"] span[data-name="自動詞形G"],
+.dict-skk8  span[data-name="共通"] span[data-name="他動詞形G"],
+.dict-skk8  span[data-name="共通"] span[data-name="可能形G"],
+.dict-skk8  span[data-name="共通"] span[data-name="人G"] {
+    display: inline;
+}
+
+.dict-skk8  span[data-name="名詞形G"] span[data-name="用例G"],
+.dict-skk8  span[data-name="動詞形G"] span[data-name="用例G"],
+.dict-skk8  span[data-name="自動詞形G"] span[data-name="用例G"],
+.dict-skk8  span[data-name="他動詞形G"] span[data-name="用例G"],
+.dict-skk8  span[data-name="可能形G"] span[data-name="用例G"],
+.dict-skk8  span[data-name="人G"] span[data-name="用例G"] {
+    display: inline;
+}
+
+.dict-skk8  span[data-name="参照G"] {
+    display: inline;
+}
+
+.dict-skk8  span[data-name="参照矢印"] {
+    margin-right: 0.25em;
+}
+
+.dict-skk8  span[data-name="参照"] {
+}
+
+.dict-skk8  span[data-name="子項目"] {
+    display: block;
+    margin-top: 0.5em;
+}
+
+.dict-skk8  span[data-name="子見出部"] {
+    display: block;
+    /* text-indent: -1em; */
+}
+
+.dict-skk8  span[data-name="子見出仮名"] {
+    font-family: jpgothic, sans-serif;
+    font-weight: bold;
+}
+
+.dict-skk8  span[data-name="親見出省略"] {
+    font-family: jpgothic, sans-serif;
+}
+
+.dict-skk8  span[data-name="句項目"] {
+    display: block;
+    margin-top: 0.5em;
+}
+
+.dict-skk8  span[data-name="句見出部"] {
+    display: block;
+    /* text-indent: -1em; */
+}
+
+.dict-skk8  span[data-name="句表記"] {
+    font-family: jpgothic, sans-serif;
+    font-weight: bold;
+}
+
+.dict-skk8  span[data-name="対義語G"] {
+}
+
+.dict-skk8  span[data-name="派生語G"] {
+    display: block;
+}
+
+.dict-skk8  span[data-name="謙譲形G"] {
+    display: block;
+}
+
+.dict-skk8  span[data-name="共通"] {
+    display: block;
+}
+
+.dict-skk8  span[data-name="共通ロゴ"] {
+    color: red;
+    margin-right: 0.25em;
+}
+
+.dict-skk8  span[data-name="rank1"] a,
+.dict-skk8  span[data-name="rank2"] a,
+.dict-skk8  span[data-name="rank3"] a,
+.dict-skk8  span[data-name="表外字マーク"] a,
+.dict-skk8  span[data-name="表外音訓マーク"] a,
+.dict-skk8  span[data-name="省略形"] a,
+.dict-skk8  span[data-name="熟字訓"] a,
+.dict-skk8  span[data-name="原籍"] a,
+.dict-skk8  span[data-name="品詞"] a,
+.dict-skk8  span[data-name="専門"] a,
+.dict-skk8  span[data-name="使用域"] a,
+.dict-skk8  span[data-name="rect"] a {
+    color: black;
+    border-top-style: none;
+}
+
+.dict-skk8  span[data-name="共通ロゴ"] a {
+    color: red;
+    border-top-style: none;
+}
+
+.dict-skk8  span[data-name="rect"].red a {
+    color: red;
+}
+
+.dict-skk8  a {
+    text-decoration: none;
+    padding-top: 0.04em;
+    /* border-top: solid 1px blue; */
+}
+
+.dict-skk8  a.appendix {
+    color: black;
+    text-decoration: none;
+    border-top-style: none;
+}
+
+.dict-skk8  a.black {
+    color: black;
+}
+
+.dict-skk8  span[data-name="カット"] {
+    display: block;
+    width: 75%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dict-skk8  span[data-name="カット"] img {
+    max-height: 200px;
+    max-width: 600px;
+}
+
+.dict-skk8  span[data-name="イタリック"] {
+    font-style: italic;
+}
+
+.dict-skk8  span[data-name="ボールド"] {
+    font-weight: bold;
+}
+
+.dict-skk8  span[data-name="色版"] {
+    color: red;
+}
+
+/* 独自定義 */
+
+.dict-skk8  span[data-name="rect"] {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    padding: 0.1em;
+    font-size: 0.8em;
+    border-width: 0.04em;
+    border-style: solid;
+    border-color: black;
+    word-break: keep-all;
+    border-radius: 0.1em;
+}
+
+.dict-skk8  span[data-name="rect"].fill {
+    color: white;
+    border-style: none;
+    background-color: gray;
+}
+
+.dict-skk8  span[data-name="rect"].red {
+    color: red;
+    border-color: red;
+}
+
+.dict-skk8  span[data-name="red"] {
+    color: red;
+}
+
+.dict-skk8  span[data-name="glyph"] {
+    font-family: jpmincho, serif;
+}
+
+.dict-skk8  span[data-name="gaiji"] {
+    width: 1em;
+}
+
+.dict-skk8  span[data-name="frac"] {
+    width: 2em;
+}
+
+.dict-skk8  img.logo {
+    display: gaiji;
+    margin-right: 0.25em;
+    height: 1em;
+    text-combine-horizontal: all;
+}
+
+.dict-skk8  .logo-red {
+    height: 1em;
+    color: red;
+}
+
+.dict-skk8  span[data-name="平板"] .logo-red {
+    margin-left: 0.1em;
+}
+
+.dict-skk8  img.区切り線 {
+    display: gaiji;
+    height: 1em;
+    padding: 0 0.3em 0 0.05em;
+    color: gray;
+    text-combine-horizontal: all;
+}
+
+/* ＊, ＊＊, and ☆☆ symbols */
+.dict-skk8  span[data-src^="svg-logo"].rank {
+    font-size: 0.65em;
+    vertical-align: super;
+}
+
+.dict-skk8  img.gaiji {
+    display: gaiji;
+    height: 1em;
+    text-combine-horizontal: all;
+}
+
+.dict-skk8  img.svg {
+    zoom: 250%;
+}
+
+.dict-skk8  span[data-name="表外字マーク"] {
+    font-size: 0.5em;
+    vertical-align: 1em;
+    -webkit-user-select: none;
+}
+
+.dict-skk8  span[data-name="表外音訓マーク"] {
+    font-size: 0.5em;
+    vertical-align: 1em;
+    -webkit-user-select: none;
+}
+
+.dict-skk8  span[data-name="表外字ロゴ"],
+.dict-skk8  span[data-name="表外音訓ロゴ"] {
+    margin: 0em 0.5em;
+    font-size: 0.5em;
+}
+
+.dict-skk8  span[data-name="アクセント"] {
+}
+
+.dict-skk8  span[data-name="アクセント表記"] {
+    font-family: jpgothic, sans-serif;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.dict-skk8  span[data-name="横"] {
+    text-combine-horizontal: all 1;
+}
+
+.dict-skk8  span[data-name="縦中横"] {
+    text-combine-horizontal: all;
+}
+
+.dict-skk8  span[data-name="分子"],
+.dict-skk8  span[data-name="分母"] {
+    text-combine-horizontal: all;
+}
+
+.dict-skk8  span[data-name="英"],
+.dict-skk8  span[data-name="回転"] {
+    writing-mode: horizontal-tb;
+}
+
+.dict-skk8  span[data-name="i"] {
+    font-family: "Times New Roman";
+    font-style: italic;
+}
+
+.dict-skk8  span[data-name="横"] span[data-name="sub"] {
+    font-size: 0.7em;
+    vertical-align: 0.35em;
+}
+
+.dict-skk8  span[data-name="kanbun"] {
+    font-size: 0.5em;
+    vertical-align: -1em;
+}
+
+.dict-skk8  span[data-name="歴史仮名"] {
+    font-size: 0.7em;
+    vertical-align: 0.5em;
+    -webkit-user-select: none;
+}
+
+.dict-skk8  span[data-name="品詞G"] {
+    /* margin-left: 0.25em; */
+}
+
+.dict-skk8  span[data-name="ロゴ"] {
+    margin-right: 0.25em;
+}
+
+.dict-skk8  span[data-name="割書"] {
+    /*display: warichu;*/
+    /*font-size: 0.5em;*/
+}
+
+.dict-skk8  span[data-name="尊敬形G"],
+.dict-skk8  span[data-name="謙譲形G"],
+.dict-skk8  span[data-name="丁寧形G"] {
+    display: block;
+}
+
+.dict-skk8  span[data-name="百科"],
+.dict-skk8  span[data-name="由来"],
+.dict-skk8  span[data-name="区別"],
+.dict-skk8  span[data-name="アクセント注記"] {
+    display: block;
+}
+
+.dict-skk8  span[data-name="表記情報"] {
+    display: block;
+}
+
+.dict-skk8  span[data-name="別見出"] {
+    font-family: jpmincho, serif;
+    font-weight: bold;
+}
+
+.dict-skk8  span[data-name="読み"] {
+    font-size: 0.7em;
+}
+
+.dict-skk8  span[data-name="歴史仮名"]:before,
+.dict-skk8  span[data-name="ルビ"]:before {
+    content: "(";
+}
+
+.dict-skk8  span[data-name="歴史仮名"]:after,
+.dict-skk8  span[data-name="ルビ"]:after {
+    content: ")";
+}
+
+.dict-skk8  div[data-child-links] {
+    padding-left: 1em;
+}
+
+.dict-skk8  div[data-child-links] ul {
+    margin: 0;
+    padding-left: 2em;
+}
+
+.dict-skk8  div[data-child-links] span {
+    padding: 0.1em;
+    font-family: jpgothic, sans-serif;
+    font-size: 0.8em;
+    color: white;
+    border-width: 0.05em;
+    border-style: none;
+    border-color: black;
+    border-radius: 0.2em;
+    word-break: keep-all;
+}
+
+.dict-skk8  div[data-child-links="子項目"] span {
+    background-color: rgb(153, 42, 103);
+}
+
+.dict-skk8  div[data-child-links="句項目"] span {
+    background-color: rgb(176, 127, 57);
+}
+
+
+/* Replacements for vertical SVG icons */
+.dict-skk8  span[data-src="svg-logo/区別.svg"],
+.dict-skk8  span[data-src="svg-logo/由来.svg"] {
+    font-family: jpgothic, sans-serif;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    padding: 0em 0.1em 0.1em 0.1em;
+    font-size: 0.8em;
+    word-break: keep-all;
+    border-radius: 0.2em;
+    border-style: none;
+    color: white;
+    background-color: red;
+}
+
+.dict-skk8  span[data-src="svg-logo/アク.svg"],
+.dict-skk8  span[data-src="svg-logo/丁寧.svg"],
+.dict-skk8  span[data-src="svg-logo/可能.svg"],
+.dict-skk8  span[data-src="svg-logo/尊敬.svg"],
+.dict-skk8  span[data-src="svg-logo/表記.svg"],
+.dict-skk8  span[data-src="svg-logo/謙譲.svg"],
+.dict-skk8  span[data-src="svg-logo/接尾.svg"],
+.dict-skk8  span[data-src="svg-logo/接頭.svg"] {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    padding: 0em 0.1em 0.1em 0.1em;
+    font-size: 0.8em;
+    word-break: keep-all;
+    border-width: 0.1em;
+    border-style: solid;
+    border-radius: 0.2em;
+}
+
+.dict-skk8  span[data-src="svg-logo/アク.svg"],
+.dict-skk8  span[data-src="svg-logo/丁寧.svg"],
+.dict-skk8  span[data-src="svg-logo/可能.svg"],
+.dict-skk8  span[data-src="svg-logo/尊敬.svg"],
+.dict-skk8  span[data-src="svg-logo/表記.svg"],
+.dict-skk8  span[data-src="svg-logo/謙譲.svg"] {
+    font-family: jpgothic, sans-serif;
+}
+
+.dict-skk8  span[data-src="svg-logo/接尾.svg"],
+.dict-skk8  span[data-src="svg-logo/接頭.svg"] {
+    font-family: jpmincho, serif;
+}

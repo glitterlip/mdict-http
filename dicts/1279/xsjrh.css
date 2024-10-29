@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@font-face {font-family:"Ten Mincho Text";src:url("Ten Mincho Text Regular.otf") format("opentype");}
+.dict-xsjrh .xsjrh-entry {color:#1a1a1a; font-size:1em; font-family:"Yu Mincho",Meiryo,sans-serif; font-weight:normal; font-style:normal; text-indent:0; line-height:1.7;}
+.dict-xsjrh .xsjrh-head {display:block; margin-bottom:.1em;}
+.dict-xsjrh .xsjrh-word1,.dict-xsjrh  .xsjrh-pword {display:inline; font-size:1.4em; color:black; font-weight:bold; font-family:"Ten Mincho Text","Yu Mincho",Meiryo,sans-serif;}
+.dict-xsjrh .xsjrh-word2 {display:inline; font-size:1.4em; color:black; font-weight:bold; font-family:"Ten Mincho Text","Yu Mincho",Meiryo,sans-serif;}.xsjrh-body .xsjrh-pword {font-size:1.1em; color:black;}
+.dict-xsjrh .xsjrh-sense {display:block;}
+.dict-xsjrh .xsjrh-sense-wrap {display:block;}
+.dict-xsjrh .mt .xsjrh-sense-li,.dict-xsjrh  .xsjrh-psense-li {display:block; margin-left:1.3em;}
+.dict-xsjrh .xsjrh-fbox {display:inline;}
+.dict-xsjrh .xsjrh-fbox:before {content:"〘";}
+.dict-xsjrh .xsjrh-fbox:after {content:"〙";}
+.dict-xsjrh .xsjrh-cbox {display:block;}
+.dict-xsjrh .xsjrh-cat {display:inline;}
+.dict-xsjrh .xsjrh-cid {margin-right:.3em;}
+.dict-xsjrh .xsjrh-sid {position:absolute; width:1.3em;}
+.dict-xsjrh .xsjrh-jid {float:left; margin-left:-1.3em; font-weight:bold;}
+.dict-xsjrh .xsjrh-j .xsjrh-cid {margin-right:0; margin-left:.1em;}
+.dict-xsjrh .xsjrh-sid+.xsjrh-sense-wrap,.dict-xsjrh  .xsjrh-sense-wrap+.xsjrh-sense-wrap {margin-left:1.3em;}
+.dict-xsjrh .xsjrh-c {color:rgb(145,145,145); display:block; font-family:Tahoma,SimSun,Arial,Helvetica,sans-serif;}
+.dict-xsjrh .xsjrh-c .xsjrh-cj {font-family:"Yu Mincho",Meiryo,sans-serif;}
+.dict-xsjrh .xsjrh-sense+.xsjrh-sense,.dict-xsjrh  .xsjrh-sense+.xsjrh-cbox,.dict-xsjrh  .xsjrh-sense+.xsjrh-entry img+.xsjrh-cbox {margin-top:.3em;}
+.dict-xsjrh .xsjrh-exbox {display:block;}
+.dict-xsjrh .xsjrh-exbox .xsjrh-j {display:inline; margin-right:.2em;}
+.dict-xsjrh .xsjrh-exbox .xsjrh-j:before {content:"「";}
+.dict-xsjrh .xsjrh-exbox .xsjrh-j:after {content:"」";}
+.dict-xsjrh .xsjrh-exbox .xsjrh-j+.xsjrh-c {display:inline !important;}
+.dict-xsjrh .xsjrh-k {font-size:65%; font-family:"Yu Mincho",Meiryo,sans-serif; font-weight:normal; text-align:left;}
+.dict-xsjrh .xsjrh-t {font-size:75%; font-family:"Yu Mincho",Meiryo,sans-serif; font-weight:normal; text-align:left;}
+.dict-xsjrh .xsjrh-l {font-size:75%;}
+.dict-xsjrh .xsjrh-png {height:1.2em; vertical-align:-0.25em; border:none;}
+.dict-xsjrh .xsjrh-svg1 {vertical-align:-.15em;}
+.dict-xsjrh .xsjrh-svg2 {vertical-align:-.65em;}
+.dict-xsjrh .xsjrh-pbox {display:block; text-indent:-.5em; margin:1em .3em 0 .3em;}
+.dict-xsjrh .xsjrh-ptitle {display:inline; color:#006666; font-weight:bold;}
+.dict-xsjrh .xsjrh-p {white-space:nowrap;}
+.dict-xsjrh .xsjrh-psense {display:block;}
+.dict-xsjrh .xsjrh-psense+.xsjrh-psense {margin-top:.3em;}
+.dict-xsjrh .xsjrh-body>.xsjrh-cat:first-child,.dict-xsjrh  .xsjrh-psense>.xsjrh-cat:first-child {display:block;}
+.dict-xsjrh .xsjrh-nbox {display:block; margin-top:.5em;}
+.dict-xsjrh .xsjrh-note {display:inline; cursor:pointer;}
+.dict-xsjrh .xsjrh-note:hover {border-bottom:1px dashed #999; text-decoration:none;}
+.dict-xsjrh .xsjrh-foot {margin-top:.5em;}
+.dict-xsjrh .xsjrh-foot:before {content:"»"; font-size:1em; margin-right:.2em;}
+.dict-xsjrh .xsjrh-ttitle1 {display:block; font-size:1.2em; font-weight:bold; border-bottom:1px solid black;}
+.dict-xsjrh .xsjrh-ttitle2 {display:block; font-size:1.2em; font-weight:bold;}
+.dict-xsjrh .xsjrh-tbox-wb {display:inline-block; width:18em; vertical-align:top; margin-right:.5em;}
+.dict-xsjrh .xsjrh-tbox-wn {display:inline-block; width:1.5em; font-weight:bold; text-align:right; padding-right:.5em;}
+.dict-xsjrh .xsjrh-tbox-w {display:inline;}
+.dict-xsjrh .xsjrh-lbox {display:table; border-collapse:collapse;}
+.dict-xsjrh .xsjrh-lbox-r1 {display:table-row; border-bottom:1px solid black;}
+.dict-xsjrh .xsjrh-lbox-r1:first-child {border-top:1px solid black;}
+.dict-xsjrh .xsjrh-lbox-c1 {display:table-cell; text-align:center;}
+.dict-xsjrh .xsjrh-lbox-c2 {display:table-cell; text-align:left;}
+.dict-xsjrh .xsjrh-lbox-c1+.xsjrh-lbox-c1,.dict-xsjrh  .xsjrh-lbox-c2+.xsjrh-lbox-c1,.dict-xsjrh  .xsjrh-lbox-c1+.xsjrh-lbox-c2,.dict-xsjrh  .xsjrh-lbox-c2+.xsjrh-lbox-c2 {padding-left:1.5em;}
+.dict-xsjrh .xsjrh-lbox-c1:first-child, .xsjrh-lbox-c2:first-child {padding-left:.5em;}
+.dict-xsjrh .xsjrh-lbox-c1:last-child, .xsjrh-lbox-c2:last-child {padding-right:.5em;}
+.dict-xsjrh .xsjrh-entry a {color:#2F6BE6; text-decoration:none;}
+.dict-xsjrh .xsjrh-entry a:hover {text-decoration:underline;}
+.dict-xsjrh .xsjrh-entry sub {font-size:60%; vertical-align:sub;}
+.dict-xsjrh .xsjrh-entry sup {font-size:60%; vertical-align:super;}
+
+/********/
+.dict-xsjrh .xsjrh-lbox-r2 {display:table-row;}
+.dict-xsjrh .xsjrh-psense+.xsjrh-word-block {display:block; margin-top:.2em;}
+.dict-xsjrh .phrase-item {display:block; font-size:1.25em; color:#006666; font-weight: bold; margin-top:.5em;}

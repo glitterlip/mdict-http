@@ -1,0 +1,696 @@
+/*=========================全局=========================*/
+
+/*全局*/
+.dict-crown2  div.jp_section {
+    margin-left: 0.2em;
+    color: #3e1e00;
+}
+
+/*=========================拼音=========================*/
+
+/*正文拼音隐藏*/
+.dict-crown2  span.trans.ty_pinyin,
+.dict-crown2  span.ph.ty_pinyin {
+    display: none;
+}
+
+/*显示跳转词条的拼音*/
+.dict-crown2  span.xrg.x_xd1.ty_同形異読 span.ph.ty_pinyin,
+.dict-crown2  span.xrg.ty_同形異読 span.ph.ty_pinyin,
+.dict-crown2  span.xrg.x_xd2.ty_項目 span.ph.ty_pinyin {
+    display: inline;
+    margin-left: 0.2em;
+}
+
+/*显示补足说明里的拼音*/
+.dict-crown2  span.gr.x_xd2.ty_補足説明 span.ph.ty_pinyin {
+    display: inline;
+}
+
+/*=========================标题栏=========================*/
+
+/*标题栏*/
+.dict-crown2  span.hwg.x_xh0 {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+/*标题栏文字*/
+.dict-crown2  span.hwg.x_xh0 span.hw,
+.dict-crown2  span.hwg.x_xh0 span.gp,
+.dict-crown2  span.hwg.x_xh0 span.hv.t_kanji {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #6c2c14;
+}
+
+/*外字标题*/
+.dict-crown2  span.hwg.x_xh0 span.hw span.gp.tg_外字 {
+    font-weight: bold;
+    font-size: 1em;
+    color: #6c2c14;
+}
+
+/*标题繁体异体其他写法整体*/
+.dict-crown2  span.hvg.ty_繁体字,
+.dict-crown2  span.hvg.ty_異体字,
+.dict-crown2  span.hwg.x_xh0 span.hvg {
+    color: #a75a23;
+    vertical-align: 0.1em;
+}
+
+/*标题繁体异体其他写法文字*/
+.dict-crown2  span.hvg.ty_繁体字 .hv,
+.dict-crown2  span.hvg.ty_異体字 .hv {
+    padding-left: 0.1em;
+    font-size: 1.6em;
+}
+
+.dict-crown2  span.hwg.x_xh0 span.hvg span.hv {
+    font-size: 1.6em;
+}
+
+/*标题繁体异体其他写法括号*/
+.dict-crown2  span.hvg.ty_繁体字 span.gp,
+.dict-crown2  span.hvg.ty_異体字 span.gp,
+.dict-crown2  span.hwg.x_xh0 span.hvg span.gp {
+    color: #a75a23;
+    font-size: 1.6em;
+    font-weight: 400;
+    padding: 0 3px;
+    vertical-align: 1px;
+}
+
+
+/*标题繁体异体其他写法标志*/
+.dict-crown2  span.hvg.ty_繁体字 span.lbl.x_rr,
+.dict-crown2  span.hvg.ty_異体字 span.lbl.x_rr {
+    color: #a75a23;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 1px 2px 2px 2px;
+    vertical-align: 0.2em;
+    font-size: 1em;
+}
+
+/*标题异体语义*/
+.dict-crown2  span.hwg.x_xh0 span.hvg.ty_異体字 span.gp.ty_語義 {
+    color: white;
+    font-size: 0.8em;
+    padding: 1px 4px;
+}
+
+.dict-crown2  span.hwg.x_xh0 span.hvg.ty_異体字 span.gp.ty_語義間 {
+    font-size: 1.0em;
+}
+
+/*标题拼音*/
+.dict-crown2  span.hwg.x_xh0 span.pr span.ph.ty_pinyin {
+    display: inline;
+    font-size: 1.5em;
+    padding: 0 0.2em;
+    color: #a75a23aa;
+}
+
+/*标题右上角序号（如“把”词条)*/
+.dict-crown2  span.hwg.x_xh0 span.gp.ty_hom.tg_hw,
+.dict-crown2  span.hwg.x_xh0 span.gp.ty_hom.tg_xr {
+    font-size: 0.8em;
+    vertical-align: super;
+    margin-right: 0.1em;
+}
+
+/*=========================要点G与Box=========================*/
+/*要点G仅出现于“把、才、的、好、就、是、有、再、在”词条中*/
+
+/*整体*/
+.dict-crown2  span.box {
+    display: block;
+    margin: 1em 0 1em 1.8em;
+    background-color: #fff9f6;
+    width: fit-content;
+    border-left-style: solid;
+    border-left-width: thick;
+    border-color: #a75a23;
+    padding: 0.7em 0.75em 0.5em 0.75em;
+}
+
+.dict-crown2  span.box.ty_要点G span.exg.x_xd2.hasSn {
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
+}
+
+.dict-crown2  span.box.ty_要点G span.exg.x_xd2.hasSn span.trg.x_xd3 span.gp {
+    font-size: 0.9em;
+}
+
+
+.dict-crown2  span.xrg.ty_関連情報 span.gp.tg_xrg,
+.dict-crown2  span.hwg.x_xh0 span.gp.ty_副義,
+.dict-crown2  span.box.ty_要点G span.x_xdh span.ps {
+    font-size: 1em;
+}
+
+/*要点G出现的词条序号样式*/
+.dict-crown2  span.hwg.x_xh0 span.gp.ty_大語義 {
+    font-size: 0.9em;
+    vertical-align: 0.1em;
+    font-weight: bold;
+    font-family: serif;
+    border-radius: 0.3em;
+    padding: 0.1em 0.4em 0.1em 0.4em;
+    background-color: #56300d;
+    color: white;
+    margin: 0 0.2em;
+}
+
+.dict-crown2  span.hwg.x_xh0 span.gp.ty_語義 {
+    font-size: 0.9em;
+    vertical-align: 0.1em;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 1em;
+    padding: 0.1em 0.4em 0.1em 0.4em;
+    background-color: #9A5034;
+    color: white;
+    margin: 0 0.2em;
+}
+
+.dict-crown2  span.hwg.x_xh0 span.gp.ty_副義 {
+    color: #a75a23bb;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0em 0.2em;
+    font-size: 0.9em;
+    font-weight: bold;
+    vertical-align: 0.1em;
+    margin: 0 0.2em;
+}
+
+/*Box内文本*/
+.dict-crown2  span.semb.x_xd1.hasSn span.box.x_xdt span.np.x_xd3,
+.dict-crown2  span.box > span.np.x_xd3 {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.dict-crown2  span.box.x_xdt span.np.x_xd3:first-of-type,
+.dict-crown2  span.box.x_xdt span.x_xdh {
+    color: #3e1e00;
+}
+
+/*例句缩进*/
+.dict-crown2  span.box span.np.x_xd3 span.exg.x_xd2.hasSn,
+.dict-crown2  span.semb.hasSn span.box.x_xdt span.exg.x_xd2.hasSn,
+.dict-crown2  span.box span.np span.exg.x_xd2.hasSn {
+    margin-left: 1em;
+}
+
+.dict-crown2  span.x_xdh.x_xdt span.bold {
+    font-weight: bold;
+}
+
+/*box内序号*/
+.dict-crown2  span.box span.general-text {
+    font-weight: bold;
+}
+
+.dict-crown2  span.box span.general-text:after {
+    content: '. ';
+}
+
+/*=========================親字情報=========================*/
+
+/*整体*/
+.dict-crown2  span.box.t_親字情報 {
+    display: block;
+    font-size: 0.9em;
+    background-color: #fff9f6;
+    border-radius: 0.5em;
+    padding: 0.2em 0.5em;
+    width: fit-content;
+    margin: 0;
+    border-left-style: none;
+}
+
+/*块内换行*/
+
+/*隐藏各项标题*/
+.dict-crown2  span.box.t_親字情報 .bx_item .b_l {
+    display: none;
+}
+
+/*加粗*/
+.dict-crown2  span.box.t_親字情報 .bx_item .b_v {
+    font-weight: bold;
+}
+
+/*添加的各项内容*/
+.dict-crown2  span.box.t_親字情報 .bx_item:nth-of-type(1) .b_v:after {
+    content: '部 ';
+    font-weight: normal;
+}
+
+.dict-crown2  span.box.t_親字情報 .bx_item:nth-of-type(2) .b_v:after {
+    content: '画 ';
+    font-weight: normal;
+}
+
+.dict-crown2  span.box.t_親字情報 .bx_item:nth-of-type(3) .b_v:before {
+    content: ' 全';
+    font-weight: normal;
+}
+
+.dict-crown2  span.box.t_親字情報 .bx_item:nth-of-type(3) .b_v:after {
+    content: '画';
+    font-weight: normal;
+}
+
+/*.box.t_親字情報 .bx_item:nth-of-type(3):after {
+/*	content: '';
+/*	display: block;
+/*}
+*/
+.dict-crown2  span.box.t_親字情報 .bx_item:nth-of-type(4) .b_v:before {
+    content: '四角';
+    color: #a75a23;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    font-size: 0.7em;
+    font-weight: bold;
+    vertical-align: 0.1em;
+    margin: 0 0.3em 0 0.5em;
+}
+
+.dict-crown2  span.box.t_親字情報 .bx_item:nth-of-type(4) .b_v .subEnt {
+    font-size: 0.7em;
+}
+
+.dict-crown2  span.box.t_親字情報 .bx_item:nth-of-type(5) .b_v {
+    background-color: #a75a23;
+    color: #ffe3ce;
+    border-radius: 5px;
+    padding: 0.2em 0.3em 0.2em 0.3em;
+    font-size: 0.8em;
+    font-weight: bold;
+    vertical-align: 0.1em;
+    margin: 0 0.3em 0 0.5em;
+}
+
+/*=========================释义=========================*/
+
+/*普通序号*/
+.dict-crown2  span.sn.x_rrbg.ty_sm1 {
+    display: inline;
+    font-size: 0.75em;
+    vertical-align: 0.1em;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 1em;
+    padding: 0.15em 0.5em 0.15em 0.5em;
+    background-color: #9A5034;
+    color: white;
+    margin-left: 1em;
+    margin-right: -1em;
+}
+
+/*大序号前间距*/
+.dict-crown2  span.gramb.x_xd0.hasSn {
+    display: block;
+    margin-top: 1em;
+}
+
+/*大序号*/
+.dict-crown2  span.sn.x_rrbg.ty_gr {
+    font-size: 1em;
+    vertical-align: 0.1em;
+    font-weight: bold;
+    font-family: serif;
+    border-radius: 0.3em;
+    padding: 0.1em 0.4em 0.1em 0.4em;
+    background-color: #56300d;
+    color: white;
+    margin-right: 0.2em;
+}
+
+/*大序号词性文本*/
+.dict-crown2  span.x_xdh .ps {
+    color: #a75a23bb;
+    font-size: 1.2em;
+}
+
+.dict-crown2  span.x_xdh .ps:before {
+    content: '〈';
+}
+
+.dict-crown2  span.x_xdh .ps:after {
+    content: '〉';
+}
+
+/*小序号*/
+.dict-crown2  span.sn.x_xdh.x_rr.ty_sm2 {
+    color: #a75a23bb;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0em 0.2em;
+    font-size: 0.9em;
+    font-weight: bold;
+    vertical-align: 0.1em;
+    margin: 0 -0.7em 0 0;
+}
+
+/*小序号及释义整体*/
+.dict-crown2  span.semb.x_xd2.hasSn {
+    display: block;
+    margin: 0.5em 0 0.5em 2em;
+}
+
+/*更小序号（a. b. c. 等）*/
+.dict-crown2  span.sn.x_xdh.x_rr.ty_sm3 {
+    color: #a75a23aa;
+    padding: 0em 0.2em;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 -1em 0 0;
+}
+
+.dict-crown2  span.sn.x_xdh.x_rr.ty_sm3:after {
+    content: '.';
+}
+
+/*更小序号及释义整体*/
+.dict-crown2  span.semb.x_xd3.hasSn {
+    display: block;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+/*无序号开头词性*/
+.dict-crown2  span.gramb.x_xd0 > span.gr.x_xdh {
+    margin-left: 1em;
+    margin-right: 0.3em;
+}
+
+.dict-crown2  span.gramb.x_xd0 > span.gr.x_xdh:before {
+    content: '[';
+}
+
+.dict-crown2  span.gramb.x_xd0 > span.gr.x_xdh::after {
+    content: ']';
+}
+
+.dict-crown2  span.gr {
+    color: #a75a23bb;
+}
+
+/*释义词性的括号*/
+.dict-crown2  span.gr:before {
+    content: '〈';
+}
+
+/*释义词性的括号*/
+.dict-crown2  span.gr:after {
+    content: '〉';
+}
+
+/*“語の性格”（文语·书面语、口语、方言、成语·成句、旧时等）和“量词”*/
+.dict-crown2  span.oup_label.x_rr {
+    color: #a75a23bb;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0.1em 0.2em 0.2em 0.2em;
+    font-size: 0.7em;
+    font-weight: bold;
+    vertical-align: 0.2em;
+    margin: 0 0.3em 0 0;
+}
+
+/*“語の性格”在开头时的缩进*/
+.dict-crown2  span.sn.x_rrbg.ty_sm1 + span.oup_label.x_rr {
+    margin-left: 2em;
+}
+
+.dict-crown2  span.x_xdh span.sn.x_rrbg.ty_sm1 + span.oup_label.x_rr {
+    margin-right: -1.2em;
+}
+
+/*“量词”前后的括号*/
+.dict-crown2  span.gp.t_gr {
+    color: #a75a23bb;
+    margin: 0 0.1em;
+}
+
+/*释义*/
+.dict-crown2  span.trg.x_xd2,
+.dict-crown2  span.semb.x_xd2.hasSn span.trg.x_xd3 span.trans,
+.dict-crown2  span.semb.x_xd3.hasSn span.trg.x_xd4 span.trans {
+    display: inline;
+    background-color: #fff9f6;
+    color: #3e1e00;
+    font-weight: bold;
+}
+
+/*更小序号释义的加粗规则*/
+.dict-crown2  span.semb.x_xd3.hasSn span.trg.x_xd4 span.trans {
+    font-weight: normal;
+}
+
+.dict-crown2  span.trg.x_xd4 span.trans span.bold {
+    font-weight: bold;
+}
+
+/*释义首行缩进*/
+.dict-crown2  span[d\:pos].gr.x_xd2 {
+    margin-left: 0.75em;
+}
+
+.dict-crown2  span.x_xdh + span[d\:def].trg.x_xd2 {
+    margin-left: 1.25em;
+}
+
+.dict-crown2  span.sn.x_xdh.x_rrbg.ty_gr + span.semb.x_xd1 span.trg.x_xd2 {
+    margin-left: 0em;
+}
+
+/*释义中的注释*/
+.dict-crown2  span.trg.x_xd2 span.ind,
+.dict-crown2  span.trg.x_xd2 span.fld {
+    color: #3e1e00bb;
+    font-weight: normal;
+}
+
+/*多义项词条每个词条之间的空间*/
+.dict-crown2  span.semb.x_xd1.hasSn {
+    display: block;
+    margin-top: 0.8em;
+}
+
+/*补足说明*/
+.dict-crown2  span.gr.ty_補足説明 {
+    display: block;
+    margin-top: 0.2em;
+    margin-left: 2.5em;
+}
+
+.dict-crown2  span.semb.x_xd3.hasSn span.gr.ty_補足説明 {
+    margin-left: 1.4em;
+}
+
+.dict-crown2  span.semb.x_xd2.hasSn span.box.x_xdt.ty_補足説明 span.exg.x_xd3.hasSn {
+    margin-left: 0.5em;
+}
+
+.dict-crown2  span.np.x_xd3 span.gr.ty_補足説明 {
+    margin-left: 0;
+}
+
+/*反义语、同义语*/
+.dict-crown2  span.antList.x_xd2,
+.dict-crown2  span.synList.x_xd2 {
+    display: block;
+    margin-left: 2.5em;
+    margin-top: 0.2em;
+}
+
+.dict-crown2  span.antList.x_xd2 span.lbl.x_rr,
+.dict-crown2  span.synList.x_xd2 span.lbl.x_rr {
+    display: none;
+}
+
+.dict-crown2  span.antList.x_xd2 .antGroup:before {
+    content: '反';
+}
+
+.dict-crown2  span.synList.x_xd2 .synGroup:before {
+    content: '同';
+}
+
+.dict-crown2  span.antList.x_xd2 .antGroup:before,
+.dict-crown2  span.synList.x_xd2 .synGroup:before {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    background: #6c2c14;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #ffffff;
+    transform: scale(0.75);
+    border-radius: 12.5px;
+}
+
+/*=========================例句=========================*/
+
+/*跳转词条颜色*/
+.dict-crown2  span.xr a {
+    color: #0066CC;
+    text-decoration: none;
+    margin-right: 0.2em;
+}
+
+/*跳转词条边距*/
+.dict-crown2  span.xrg.x_xd1.ty_同形異読,
+.dict-crown2  span.xrg.ty_同形異読,
+.dict-crown2  span.xrg.x_xd2.ty_項目 {
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+
+/*例句前的符号*/
+.dict-crown2  span.exg.x_xd2.hasSn span.x_xdh:first-child:before,
+.dict-crown2  span.exg.x_xd3.hasSn span.x_xdh:first-child:before,
+.dict-crown2  span.exg.x_xd4.hasSn span.x_xdh:first-child:before {
+    content: '•';
+    color: #56300daa;
+    font-weight: bold;
+    margin-right: 0.2em;
+}
+
+/*例句整体设定*/
+.dict-crown2  span.exg.x_xd2.hasSn,
+.dict-crown2  span.exg.x_xd3.hasSn,
+.dict-crown2  span.exg.x_xd4.hasSn {
+    font-size: 0.9em;
+    display: block;
+    margin-left: 2em;
+    margin-top: 0.25em;
+}
+
+/*有序号时例句的缩进*/
+.dict-crown2  span.semb.x_xd1.hasSn span.exg.x_xd2.hasSn {
+    margin-left: 3em;
+}
+
+/*例句原文前的注释*/
+.dict-crown2  span.exg.x_xd2.hasSn span.ind {
+    color: #3e1e00bb;
+}
+
+/*例句里的词条名*/
+.dict-crown2  span.rf {
+}
+
+/*例句原文颜色*/
+.dict-crown2  span.x_xdh.x_xdh span.ex {
+    color: #56300d;
+}
+
+/*例句翻译*/
+.dict-crown2  span.trg.x_xd3,
+.dict-crown2  span.trg.x_xd4,
+.dict-crown2  span.trg.x_xd5 {
+    margin-left: 1em;
+    color: #a96e36;
+}
+
+/*=========================ことわざ·慣用表現、複合語=========================*/
+
+/*释义*/
+.dict-crown2  span.semb.x_xo2 span.trg.x_xo3 span.trans,
+.dict-crown2  span.cb.x_xo0 span.trg.x_xo3 span.trans {
+    margin-left: 0.5em;
+    color: #a96e36;
+}
+
+/*例句原文*/
+.dict-crown2  span.exg.x_xo3.hasSn span.ex {
+    color: #6b3e13bb;
+}
+
+/*例句翻译*/
+.dict-crown2  span.exg.x_xo3.hasSn span.trans {
+    color: #a96e36bb;
+}
+
+/*例句前符号*/
+.dict-crown2  span.semb.x_xo2 span.exg.x_xo3.hasSn:before {
+    content: '•';
+    color: #6b3e1388;
+    font-weight: bold;
+    margin-right: 0.2em;
+}
+
+/*=========================日中比較·文化·参考·注意=========================*/
+
+/*整体*/
+.dict-crown2  span.box.ty_日中比較,
+.dict-crown2  span.box.ty_文化,
+.dict-crown2  span.box.ty_注意,
+.dict-crown2  span.grnote.x_xd2 {
+    display: block;
+    margin: 1em 0 1em 1.8em;
+    font-size: 0.9em;
+    background-color: #fff9f6;
+    width: fit-content;
+    border-left-style: solid;
+    border-left-width: thick;
+    border-color: #a75a23;
+    padding: 0.7em 0.75em 0.5em 0.75em;
+}
+
+/*各项目标志的具体文字*/
+.dict-crown2  span.box.ty_日中比較:before {
+    content: '日中比較';
+}
+
+.dict-crown2  span.box.ty_文化:before {
+    content: '文化';
+}
+
+.dict-crown2  span.grnote.x_xd2:before {
+    content: '表現·用法·比较·由来·注意·参考';
+}
+
+.dict-crown2  span.box.ty_注意:before {
+    content: '注意';
+}
+
+/*项目标志*/
+.dict-crown2  span.box.ty_日中比較:before,
+.dict-crown2  span.box.ty_文化:before,
+.dict-crown2  span.grnote.x_xd2:before,
+.dict-crown2  span.box.ty_注意:before {
+    display: block;
+    width: fit-content;
+    color: #a75a23;
+    background: #f4ebe3;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 2px 3px;
+    margin-bottom: 0.5em;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.dict-crown2  span.x_xdh.x_xdt {
+    color: #56300d;
+}

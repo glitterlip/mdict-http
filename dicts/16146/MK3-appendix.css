@@ -1,0 +1,164 @@
+appendix-item {
+	display: block;
+}
+
+dd, dl, dt {
+	display: block;
+}
+
+div dic-item {
+	margin-left: 2em;
+}
+
+div.tegami {
+	padding: 0.5em;
+	border: solid 0.5px black;
+}
+
+table {
+	margin-top: 0.5em 0;
+	border-top: solid 0.5px black;
+	border-left: solid 0.5px black;
+}
+
+table.img {
+	border: none;
+}
+
+td {
+	padding: 0.25em;
+	border-bottom: solid 0.5px black;
+	border-right: solid 0.5px black;
+}
+
+td.num {
+	width: 1em;
+}
+
+table.tegami, table.noborder {
+	border: none;
+}
+
+table.tegami td, table.noborder td {
+	border: none;
+}
+
+table.tegami-shurui tr:first-child {
+	background-color: #FFEEEE;
+}
+
+table.HR005 {
+	border: none;
+}
+
+table.HR005 td {
+	margin-bottom: 0.5em;
+	width: 30%;
+	border: none;
+	vertical-align: top;
+}
+
+table.HR005 td.border {
+	border-top: solid 0.5px black;
+}
+
+red {
+	font-family: "Hiragino Kaku Gothic ProN";
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p {
+	margin-left: 1em;
+}
+
+appendix-item.HR001 p {
+	text-indent: 1em;
+}
+
+appendix-item.HR001 p.indent {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+p.indent {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+p dic-item {
+	padding-left: 1em;
+}
+
+p.indent2 {
+	padding-left: 2em;
+}
+
+p.right {
+	text-align: right;
+}
+
+meaning.h2 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0 0.375em;
+	font-weight: bold;
+	background-color: #FFCCCC;
+}
+
+meaning.h3 {
+	font-weight: bold;
+}
+
+meaning.num {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+meaning.ref {
+	padding-left: 1em;
+}
+
+example.indent {
+	padding-left: 2em;
+}
+
+num gaiji {
+	font-size: 0;
+}
+
+num gaiji:before {
+	display: inline-block;
+	font-size: 1rem;
+}
+num gaiji[style*="10078"]:before {
+	content:"（ア）";
+}
+num gaiji[style*="10079"]:before {
+	content:"（イ）";
+}
+num gaiji[style*="10080"]:before {
+	content:"（ウ）";
+}
+num gaiji[style*="10081"]:before {
+	content:"（エ）";
+}
+num gaiji[style*="10082"]:before {
+	content:"（オ）";
+}
+num gaiji[style*="10083"]:before {
+	content:"（カ）";
+}
+num gaiji[style*="10084"]:before {
+	content:"（キ）";
+}

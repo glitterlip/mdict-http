@@ -1,0 +1,531 @@
+@color black = #000000;
+@color white = #FFFFFF;
+@color red = #FF3333;
+@color green = #005522;
+@color gray = #666666;
+@color pink = #FFCCCC;
+@color light-pink = #FFEEEE;
+@color light-red = #EE3333;
+@color dark-red = #CC3333;
+@color fbox-white = #FFFFFF;
+@color fbox-gray = #333333;
+@color box-gray = #FFDDDD;
+
+.dict-mk3 .dict-mk3 entry-index {
+    display: none;
+}
+
+.dict-mk3 .dict-mk3 a {
+    font-family: "Hiragino Kaku Gothic ProN";
+    text-decoration: none;
+    padding-top: 0.05em;
+}
+
+.dict-mk3 .dict-mk3 b {
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-weight: bold;
+}
+
+.dict-mk3 .dict-mk3 bc {
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.dict-mk3 .dict-mk3 child-item {
+    display: block;
+    margin-top: 0.5em;
+}
+
+.dict-mk3 .dict-mk3 child-items {
+    display: block;
+}
+
+.dict-mk3 .dict-mk3 column {
+    display: block;
+    margin-top: 0.5em;
+    padding: 0 0.5em;
+    border-left: solid 5px #FFDDDD;
+    border-right: solid 5px #FFDDDD;
+}
+
+.dict-mk3 .dict-mk3 meaning.columntitle {
+    margin-bottom: 0.5em;
+    padding: 0.25em 0.25em;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-weight: bold;
+    color: #CC3333;
+    border: solid 1px #CC3333;
+}
+
+.dict-mk3 .dict-mk3 dic-item {
+    display: block;
+}
+
+.dict-mk3 .dict-mk3 div {
+
+}
+
+.dict-mk3 .dict-mk3 div.body {
+    font-family: "Hiragino Kaku Gothic ProN";
+    line-height: 1.5em;
+    font-size: 1em;
+    color: #000000;
+    /*text-combine-horizontal: digits 4;*/
+    display: block;
+    margin-left: 1em;
+}
+
+.dict-mk3 .dict-mk3 div.head {
+    display: block;
+}
+
+.dict-mk3 .dict-mk3 div.hinkaku {
+    margin-top: 0.5em;
+    padding: 0.25em 0.5em;
+    background-color: #FFDDDD;
+    border-radius: 0.5em;
+}
+
+.dict-mk3 .dict-mk3 div.shikiri {
+    margin: 0.5em 0;
+    background-color: #FFCCCC;
+}
+
+.dict-mk3 .dict-mk3 div.shikiri meaning {
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-weight: bold;
+}
+
+.dict-mk3 .dict-mk3 div.shikiri td.red {
+    padding: 0 0.375em;
+    margin-right: 0.25em;
+    background-color: #FF3333;
+}
+
+.dict-mk3 .dict-mk3 div.shikiri td.red red {
+    color: #FFFFFF;
+}
+
+.dict-mk3 .dict-mk3 em {
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.dict-mk3 .dict-mk3 EM {
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-weight: bold;
+}
+
+.dict-mk3 .dict-mk3 example {
+    display: block;
+    font-family: "Hiragino Mincho ProN";
+}
+
+.dict-mk3 .dict-mk3 fbox {
+    margin-right: 0.25em;
+    padding: 0.1em;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 0.8em;
+    font-weight: normal;
+    border-style: solid;
+    border-width: 0.05em;
+    border-color: #000000;
+    border-radius: 0.2em;
+    word-break: keep-all;
+}
+
+.dict-mk3 .dict-mk3 fbox.書き方 {
+    color: #FFFFFF;
+    background-color: #CC3333;
+    border-color: #CC3333;
+}
+
+.dict-mk3 .dict-mk3 fbox.使い方 {
+    background-color: #FFCCCC;
+    border-color: #FF3333;
+}
+
+.dict-mk3 .dict-mk3 fbox.語源, fbox.数 {
+    color: #FF3333;
+    border-color: #FF3333;
+}
+
+.dict-mk3 .dict-mk3 fbox.注意 {
+    color: #FFFFFF;
+    background-color: #FF3333;
+    border-color: #FF3333;
+}
+
+.dict-mk3 .dict-mk3 fbox.品格 {
+    font-family: "Hiragino Mincho ProN";
+    font-size: 1em;
+    background-color: #FFCCCC;
+    border-color: #FF3333;
+}
+
+.dict-mk3 .dict-mk3 fbox0 {
+    margin-right: 0.25em;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 0.8em;
+    color: #FFFFFF;
+    word-break: keep-all;
+}
+
+.dict-mk3 .dict-mk3 fbox1 {
+    padding: 0.1em;
+    background-color: #FF3333;
+    border-top-left-radius: 0.2em;
+    border-bottom-left-radius: 0.2em;
+    border: solid 0.05em #FF3333;
+}
+
+.dict-mk3 .dict-mk3 fbox2 {
+    padding: 0.1em;
+    color: #FF3333;
+    border-top: solid 0.05em #FF3333;
+    border-bottom: solid 0.05em #FF3333;
+}
+
+.dict-mk3 .dict-mk3 fbox3 {
+    padding: 0.1em;
+    background-color: #FF3333;
+    border-top: solid 0.05em #FF3333;
+    border-bottom: solid 0.05em #FF3333;
+}
+
+.dict-mk3 .dict-mk3 fbox4 {
+    padding: 0.1em;
+    color: #FF3333;
+    border-top-right-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+    border: solid 0.05em #FF3333;
+}
+
+.dict-mk3 .dict-mk3 fbox1.読み分け {
+    color: #FFFFFF;
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.dict-mk3 .dict-mk3 fbox2.読み分け {
+    color: #000000;
+    border-top-color: #333333;
+    border-bottom-color: #333333;
+}
+
+.dict-mk3 .dict-mk3 fbox3.読み分け {
+    padding: 0.1em;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-top-color: #333333;
+    border-bottom-color: #333333;
+}
+
+.dict-mk3 .dict-mk3 fbox4.読み分け {
+    color: #000000;
+    border-color: #333333;
+}
+
+.dict-mk3 .dict-mk3 gaiji {
+
+}
+
+.dict-mk3 .dict-mk3 gentetsu {
+
+}
+
+.dict-mk3 .dict-mk3 gi {
+
+}
+
+.dict-mk3 .dict-mk3 glabel {
+
+}
+
+.dict-mk3 .dict-mk3 head2 {
+    display: block;
+}
+
+.dict-mk3 .dict-mk3 headword.カナ, headword.子見出し {
+    font-weight: bold;
+}
+
+.dict-mk3 .dict-mk3 headword.カナ {
+    font-size: 1em;
+}
+
+.dict-mk3 .dict-mk3 headword.表記, headword.原綴 {
+    font-family: "Hiragino Mincho ProN";
+}
+
+.dict-mk3 .dict-mk3 headword.旧かな {
+    display: warichu;
+    margin-left: 0.5em;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 0.667em;
+}
+
+.dict-mk3 .dict-mk3 hidden {
+    display: none;
+}
+
+.dict-mk3 .dict-mk3 i {
+
+}
+
+.dict-mk3 .dict-mk3 img {
+
+}
+
+.dict-mk3 .dict-mk3 img.gaiji {
+    display: gaiji;
+    height: 1em;
+    text-combine-horizontal: all;
+    vertical-align: -0.13em;
+}
+
+.dict-mk3 .dict-mk3 table.img {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.dict-mk3 .dict-mk3 td.img {
+    border: none;
+}
+
+.dict-mk3 .dict-mk3 td.img-title {
+    padding-left: 0.5em;
+    min-width: 1em;
+    text-combine-horizontal: all;
+    border: none;
+}
+
+.dict-mk3 .dict-mk3 index {
+    display: none;
+}
+
+.dict-mk3 .dict-mk3 indexlist {
+
+}
+
+.dict-mk3 .dict-mk3 kanji {
+
+}
+
+.dict-mk3 .dict-mk3 katsuyo {
+    display: warichu;
+    margin-left: 0.25em;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 0.667em;
+}
+
+.dict-mk3 .dict-mk3 key {
+    display: none;
+}
+
+.dict-mk3 .dict-mk3 lang {
+    font-size: 0.667em;
+    vertical-align: 0.5em;
+}
+
+.dict-mk3 .dict-mk3 meaning {
+    display: block;
+}
+
+.dict-mk3 .dict-mk3 nobr {
+    word-break: keep-all;
+}
+
+.dict-mk3 .dict-mk3 pos {
+    margin-right: 0.5em;
+}
+
+.dict-mk3 POS {
+    margin-right: 0.5em;
+}
+
+.dict-mk3 Pos {
+    margin-right: 0.5em;
+}
+
+.dict-mk3 pron {
+    font-family: "Doulos SIL";
+}
+
+.dict-mk3 red {
+
+}
+
+.dict-mk3 ref {
+
+}
+
+.dict-mk3 ruby {
+}
+
+.dict-mk3 rb {
+}
+
+.dict-mk3 rt {
+    font-size: 0.7em;
+    font-weight: normal;
+    display: inline;
+    vertical-align: top;
+}
+
+.dict-mk3 ruby.full {
+    display: inline;
+}
+
+.dict-mk3 ruby.full rb {
+    display: inline;
+}
+
+.dict-mk3 ruby.full rt {
+    display: none;
+}
+
+.dict-mk3 tate ruby {
+    text-combine-horizontal: none;
+}
+
+.dict-mk3 tate rb {
+    text-combine-horizontal: all 1;
+}
+
+.dict-mk3 RUBY {
+}
+
+.dict-mk3 ruigo {
+
+}
+
+.dict-mk3 slabel {
+
+}
+
+.dict-mk3 spellout {
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-weight: bold;
+}
+
+.dict-mk3 sub {
+
+}
+
+.dict-mk3 sup {
+
+}
+
+.dict-mk3 tate {
+    text-combine-horizontal: all 1;
+}
+
+.dict-mk3 yoko {
+    text-combine-horizontal: none;
+}
+
+.dict-mk3 xref {
+
+}
+
+.dict-mk3 yourei {
+
+}
+
+.dict-mk3 zoomkanji-container {
+    display: block;
+    margin-top: 0.8em;
+    line-height: 3em;
+}
+
+.dict-mk3 zoomkanji {
+    font-family: "Hiragino Mincho ProN";
+    font-size: 3em;
+    background-color: #FFCCCC;
+}
+
+出典 {
+
+}
+
+半角 {
+
+}
+
+縦中横 {
+    text-combine-horizontal: all;
+}
+
+.dict-mk3 small {
+    font-size: 0.5em;
+    vertical-align: 1em;
+}
+
+.dict-mk3 red {
+    color: #FF3333;
+}
+
+.dict-mk3 gray {
+    color: #666666;
+}
+
+.dict-mk3 div.shikiri red rect:first-child {
+    background-color: #FF3333;
+    text-combine-horizontal: all;
+}
+
+.dict-mk3 rect {
+    padding: 0.1em;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 0.8em;
+    border-width: 0.05em;
+    border-style: solid;
+    border-color: #000000;
+    word-break: keep-all;
+    -webkit-border-radius: 0.1em;
+}
+
+.dict-mk3 ref rect {
+    border-color: blue;
+}
+
+.dict-mk3 rect.fill {
+    color: #FFFFFF;
+    border-style: none;
+    background-color: #000000;
+}
+
+.dict-mk3 rect + rect {
+    margin-left: 0.1em;
+}
+
+.dict-mk3 num {
+    text-combine-horizontal: all;
+}
+
+.dict-mk3 slash {
+    font-weight: normal;
+}
+
+.dict-mk3 div.ruigo-items {
+}
+
+.dict-mk3 ruigo-items {
+    display: block;
+}
+
+.dict-mk3 ruigo-items + ruigo-items {
+    margin-top: 0.5em;
+}
+
+.dict-mk3 ruigo-item {
+    word-break: keep-all;
+}
+
+.dict-mk3 a:link {
+    color: #5066d4;
+    text-decoration: none;
+}
+
+.dict-mk3 a:hover, a:focus, a:active {
+    color: #e4671b;
+}

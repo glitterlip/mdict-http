@@ -1,0 +1,894 @@
+.dict-djs body {
+	/*margin: 0;*/
+	/*color: black;*/
+	font-family: "Hiragino Mincho ProN", "MS Mincho", "Times New Roman", serif;
+	line-height: 1.5em;
+}
+
+.dict-djs entry-index {
+	display: none;
+}
+
+.dict-djs Header {
+	display: inline-block;
+	/*float: right;*/
+	/*margin-top: 0.2em;*/
+	/*color: white;*/
+}
+
+.dict-djs Header.DJS {
+	display: none;
+	background-color: #B65058;
+}
+
+.dict-djs Header.DJSP {
+	color: white;
+	background-color: #999;
+	border-radius: 0.2em;
+	margin-bottom: 0.35em;
+}
+
+.dict-djs HeaderTitle {
+	display: block;
+	margin-top: 0.05em;
+	margin-bottom: 0.05em;
+	margin-left: 8px;
+	margin-right: 8px;
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic", sans-serif;
+	font-size: 0.7em;
+	line-height: 1.333em;
+}
+
+.dict-djs Contents {
+	display: block;
+	font-family: "Hiragino Mincho ProN", "MS Mincho", "Times New Roman", serif;
+	/*font-size: 1.1em;*/
+	/*line-height: 1.5em;*/
+	/*margin-top: 0.3em;*/
+	margin-bottom: 1em;
+	/*margin-left: 0.5em;*/
+	/*margin-right: 0.5em;*/
+}
+
+.dict-djs .見出G {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.dict-djs .解説G {
+	display: block;
+}
+
+.dict-djs SubItem {
+	display: block;
+	margin-top: 0.8em;
+}
+
+.dict-djs SubItemH {
+	display: block;
+}
+
+.dict-djs SubItemC {
+	display: block;
+	margin-left: 0.5em;
+}
+
+.dict-djs headword.見出 {
+	font-family: "Hiragino Kaku Gothic ProN", Helvetica, Arial, "MS Gothic";
+	font-weight: bold;
+}
+
+.dict-djs headword.表記, headword.原綴 {
+	margin-left: 0.25em;
+}
+
+.dict-djs headword.歴史 {
+	margin-left: 0.417em;
+	font-size: 0.7em;
+}
+
+.dict-djs Hhyphen {
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+	font-weight: bold;
+	font-size: 1.1em;
+	vertical-align: 0.03em;
+	margin-left: 0.03em;
+	margin-right: 0.03em;
+}
+
+.dict-djs Hdot {
+	font-size: 0.8em;
+}
+
+.dict-djs Wdot {
+	glyph: 12644;
+	font-size: 0.45em;
+}
+
+.dict-djs HyokiS {
+	glyph: 435;
+	vertical-align: -0.1em;
+}
+
+.dict-djs MG {
+	display: block;
+}
+
+.dict-djs MG.L1A {
+	margin-top: 0.5em;
+}
+
+.dict-djs MG.L2A, MG.L3A {
+	margin-top: 0.3em;
+}
+
+.dict-djs MG.L4A {
+}
+
+.dict-djs meaning {
+	display: block;
+}
+
+.dict-djs meaning.C {
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+.dict-djs SubMeaning {
+}
+
+.dict-djs SubMeaning.block {
+	display: block;
+}
+
+.dict-djs CampaignDesc {
+	display: block;
+	margin-top: 0.3em;
+	font-size: 0.9em;
+}
+
+.dict-djs CampaignDesc.inline {
+	display: inline;
+	margin-top: 0em;
+}
+
+.dict-djs CampaignExG {
+	display: block;
+	margin-top: 0.2em;
+}
+
+.dict-djs CampaignEx {
+	display: block;
+	font-size: 0.9em;
+	text-indent: -0.9em;
+	margin-left: 0.9em;
+}
+
+.dict-djs CampaignName {
+	display: block;
+	margin-left: 1.05em;
+	font-size: 0.8em;
+}
+
+.dict-djs ExG {
+}
+
+.dict-djs ExG.BM {
+	margin-left: 0.4em;
+}
+
+.dict-djs ExS {
+	margin-left: 0.2em;
+	font-size: 0.9em;
+}
+
+.dict-djs L4 {
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+	font-weight: bold;
+}
+
+.dict-djs L4.small {
+	font-size: 0.9em;
+}
+
+.dict-djs  MeanT {
+	display: table;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border-top: solid 0.05em gray;
+	border-left: solid 0.05em gray;
+}
+
+.dict-djs  MeanTR {
+	display: table-row;
+}
+
+.dict-djs  MeanTD {
+	display: table-cell;
+	padding: 0.3em;
+	border-bottom: solid 0.05em gray;
+	border-right: solid 0.05em gray;
+}
+
+.dict-djs  MImageG {
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+.dict-djs  MImage {
+	display: block;
+	margin: 0.5em;
+}
+
+.dict-djs  img.Image {
+	/*zoom: 60%;*/
+	max-width: 100%;
+}
+
+.dict-djs  MCaption {
+	display: block;
+	font-size: 0.75em;
+	line-height: 1.5em;
+}
+
+.dict-djs  MUrlG,.dict-djs  MLocationG {
+	display: none;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.dict-djs  MUrl,.dict-djs  MLocation {
+	display: block;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+.dict-djs  MUrl.TM {
+	margin-top: 0.3em;
+}
+
+.dict-djs  MUrlTitle {
+	display: block;
+}
+
+.dict-djs  MUrlUrl {
+	display: block;
+	font-size: 0.9em;
+}
+
+.dict-djs  MAccentAudioG {
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+.dict-djs  MAccentM {
+	color: #c00;
+}
+
+.dict-djs  MAccentSlash {
+	font-size: 0.9em;
+	color: #808080;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+
+.dict-djs  img.audio {
+	/*display: none;*/
+	height: 1em;
+	vertical-align: -0.1em;
+}
+
+.dict-djs  rect {
+	padding: 0.04em 0.05em 0.058em 0.05em;
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+	font-size: 0.8em;
+	border: 1px solid;
+	word-break: keep-all;
+	border-radius: 0.1em;
+}
+
+.dict-djs  rect.fill {
+	padding: 0.1em;
+	color: white;
+	border-style: none;
+	background-color: black;
+}
+
+.dict-djs  rect.L3 {
+	padding: 0.1em 0.15em 0.1em 0.19em;
+	color: white;
+	border-style: none;
+	background-color: #606060;
+}
+
+.dict-djs  rect.bold {
+	font-weight: bold;
+}
+
+.dict-djs  rect.small {
+	font-size: 0.72em;
+}
+
+.dict-djs  circle {
+	padding: 0.06em 0.1em 0.08em;
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+	font-size: 0.8em;
+	border: 1px solid;
+	border-radius: 0.67em;
+}
+
+.dict-djs .補足ロゴG {
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+	font-size: 0.8em;
+	background-color: black;
+	border-radius: 0.2em;
+	padding: 0.1em 0.25em 0.1em 0.25em;
+	word-break: keep-all;
+	vertical-align: 0.05em;
+}
+
+.dict-djs .補足ロゴ {
+	background-color: white;
+	color: black;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	padding: 0.05em 0.08em 0.06em 0.08em;
+}
+
+.dict-djs .補足ロゴG[cl="small"] {
+	font-size: 0.7em;
+}
+
+.dict-djs  HinshiSahen {
+	font-size: 0.5em;
+	vertical-align: 0.9em;
+	margin-right: 0.6em;
+}
+
+.dict-djs .季語ロゴ前 {
+	background-color: white;
+	color: black;
+	border-top: solid 0.05em black;
+	border-bottom: solid 0.05em black;
+	border-right: solid 0.05em white;
+	padding: 0.04em 0 0.06em 0;
+}
+
+.dict-djs .季語ロゴ後 {
+	background-color: white;
+	color: black;
+	border-top: solid 0.05em black;
+	border-bottom: solid 0.05em black;
+	border-left: solid 0.05em white;
+	padding: 0.04em 0 0.06em 0;
+}
+
+.dict-djs .季語ロゴ中 {
+	background-color: white;
+	color: black;
+	padding: 0.1em 0 0.12em 0;
+}
+
+.dict-djs .季語ロゴS {
+	font-size: 0.4em;
+}
+
+.dict-djs .季語M {
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+	font-weight: bold;
+	font-size: 0.85em;
+	margin-right: 0.3em;
+}
+
+.dict-djs .季語 {
+	font-family: "Hiragino Mincho ProN";
+	font-size: 1.1em;
+}
+
+.dict-djs .歌枕M {
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+}
+
+.dict-djs  lang {
+	font-size: 0.7em;
+	margin-left: 0.05em;
+}
+
+.dict-djs  lang.FM {
+	margin-right: 0.3em;
+}
+
+.dict-djs  lang.BM {
+	margin-left: 0.3em;
+}
+
+.dict-djs  lang.IM {
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+}
+
+.dict-djs .歴史 {
+	font-size: 0.7em;
+	vertical-align: 0.35em;
+}
+
+.dict-djs  bold {
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+	font-weight: bold;
+}
+
+.dict-djs  italic {
+	font-family: Georgia;
+	font-style: italic;
+}
+
+.dict-djs  sub {
+	font-size: 0.6em;
+	font-weight: normal;
+	vertical-align: -0.1em;
+}
+
+.dict-djs  sub.capital {
+	font-size: 0.5em;
+	vertical-align: -1.1em;
+}
+
+.dict-djs  sub.kana {
+	vertical-align: -0.7em;
+}
+
+.dict-djs  sub.DJSP_kana {
+	font-size: 0.7em;
+	vertical-align: -0.45em;
+}
+
+.dict-djs  sup {
+	font-size: 0.6em;
+	vertical-align: 0.5em;
+}
+
+.dict-djs  sup.kaeriten {
+	font-size: 0.5em;
+	vertical-align: -1em;
+}
+
+.dict-djs .常外音訓M {
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+	font-size: 0.38em;
+	vertical-align: 1.4em;
+}
+
+.dict-djs .常外M {
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+	font-size: 0.55em;
+	vertical-align: 1em;
+}
+
+.dict-djs .付表有M, .付表無M {
+	font-family: "Hiragino Kaku Gothic ProN", "MS Gothic";
+	font-size: 0.45em;
+	vertical-align: 0.4em;
+}
+
+.dict-djs  WhiteDiamond, BlackDiamond {
+	font-size: 0.7em;
+	margin-right: 0.3em;
+}
+
+.dict-djs  K-h {
+}
+
+.dict-djs  K-v {
+	display: none;
+}
+
+.dict-djs  wari, Small {
+	font-size: 0.7em;
+}
+
+.dict-djs  Small {
+	vertical-align: -0.1em;
+}
+
+.dict-djs  wari {
+	vertical-align: 0.4em;
+}
+
+.dict-djs  headword wari, bold wari {
+	font-weight: normal;
+}
+
+.dict-djs  Gaiji.dakuten, Gaiji.handakuten {
+	margin-left: 0.3em;
+	margin-right: -0.5em;
+}
+
+.dict-djs  Gaiji.keigashira {
+	font-family: "Heiti TC";
+}
+
+.dict-djs  img.gaiji {
+	/*display: gaiji;*/
+	height: 1em;
+	vertical-align: -0.1em;
+}
+
+.dict-djs  a {
+	text-decoration: none;
+	/*color: black;*/
+}
+
+.dict-djs  a.blue {
+	color: blue;
+}
+
+.dict-djs  a.blue rect, a.blue circle {
+	border-color: blue;
+}
+
+.dict-djs  a.blue rect.fill, a.blue rect.L3 {
+	background-color: blue;
+}
+
+.FM {
+	margin-right: 0.15em;
+}
+
+.BM {
+	margin-left: 0.15em;
+}
+
+.IM {
+	margin-left: 0.15em;
+	margin-right: 0.15em;
+}
+
+.dict-djs  Appendix-タイトル {
+	display: block;
+	font-family: "Hiragino Mincho ProN", "MS Mincho", "Times New Roman", serif;
+	margin-bottom: 1em;
+	/* VERTICAL */
+	/*
+	margin-left: 1em;
+	*/
+}
+
+.dict-djs  Appendix-段落G {
+	display: block;
+	margin-bottom: 0.8em;
+}
+
+.dict-djs  Appendix-段落 {
+	display: block;
+	text-indent: 1em;
+}
+
+.dict-djs  Appendix-Jo {
+	font-family: "Hiragino Mincho ProN";
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.dict-djs  Appendix-日付 {
+	display: block;
+	font-size: 0.9em;
+	margin-left: 2.222em;
+}
+
+.dict-djs  Appendix-コピーライト {
+	display: block;
+	text-align: right;
+	margin-right: 1em;
+}
+
+.dict-djs  Appendix-項目G {
+	display: block;
+}
+
+.dict-djs  Appendix-項目G+Appendix-項目G {
+	margin-top: 1.4em;
+}
+
+.dict-djs  Appendix-項目タイトル {
+	display: block;
+	padding: 0.3em 0.5em;
+	font-family: "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+	background-color: #D0D0D0;
+}
+
+.dict-djs  Appendix-子項目G {
+	display: block;
+	margin-top: 0.3em;
+}
+
+.dict-djs  Appendix-子項目G+Appendix-子項目G {
+	margin-top: 1em;
+}
+
+.dict-djs  Appendix-子項目G.TM {
+	margin-top: 1em;
+}
+
+.dict-djs  Appendix-子項目G.TM2 {
+	margin-top: 0.7em;
+}
+
+.dict-djs  Appendix-子項目G.TM3 {
+	margin-top: 1.5em;
+}
+
+.dict-djs  Appendix-子項目タイトル, Appendix-項タイトル {
+	display: block;
+	font-family: "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+}
+
+.dict-djs  Appendix-項G {
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+.dict-djs  Appendix-項 {
+	display: block;
+}
+
+.dict-djs  Appendix-項.TM {
+	margin-top: 1em;
+}
+
+.dict-djs  Appendix-項.TM2 {
+	margin-top: 0.3em;
+}
+
+.dict-djs  Appendix-項.LM {
+	margin-left: 2em;
+}
+
+.dict-djs  Appendix-項2G {
+	display: block;
+	margin-left: 1em;
+}
+
+.dict-djs  Appendix-子項目番号, Appendix-項番号 {
+	font-family: "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+	margin-right: 0.5em;
+}
+
+.dict-djs  Appendix-サブ項番号 {
+	font-family: "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+	margin-right: 0.2em;
+}
+
+.dict-djs  Appendix-例G {
+	display: block;
+	margin-left: 2em;
+	font-family: "Hiragino Mincho ProN";
+}
+
+.dict-djs  Appendix-例G.アクセント {
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.dict-djs  Appendix-例G.アクセント2 {
+	margin-top: 0.3em;
+}
+
+.dict-djs  Appendix-例G.アクセント3 {
+	margin-left: 0;
+	margin-top: 1em;
+}
+
+.dict-djs  Appendix-例タイトル {
+	display: block;
+	font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.dict-djs  Appendix-例 {
+	display: block;
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+.dict-djs  Appendix-例2 {
+	display: block;
+	margin-left: 1em;
+}
+
+.dict-djs  Appendix-一覧項 {
+	display: block;
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+.dict-djs  Appendix-記号G {
+	display: table;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+.dict-djs  Appendix-記号項G {
+	display: table-row;
+}
+
+.dict-djs  Appendix-記号 {
+	display: table-cell;
+	vertical-align: top;
+	width: 6em;
+	margin-top: 0.15em;
+	margin-bottom: 0.15em;
+}
+
+.dict-djs  Appendix-記号.VM {
+	vertical-align: middle;
+}
+
+.dict-djs  Appendix-記号.アクセント {
+	width: 3em;
+}
+
+.dict-djs  Appendix-記号説明 {
+	display: table-cell;
+	vertical-align: top;
+	margin-top: 0.15em;
+	margin-bottom: 0.15em;
+}
+
+.dict-djs  Appendix-字M {
+	font-size: 1.2em;
+	color: #999;
+}
+
+.dict-djs  Appendix-VM {
+	vertical-align: middle;
+}
+
+.dict-djs  Appendix-記号-常外M {
+	font-family: "Hiragino Kaku Gothic ProN";
+	font-size: 0.55em;
+	vertical-align: 2.1em;
+}
+
+.dict-djs  Appendix-記号-常外音訓M {
+	font-family: "Hiragino Kaku Gothic ProN";
+	font-size: 0.38em;
+	vertical-align: 3em;
+}
+
+.dict-djs  Appendix-記号-HinshiSahen {
+	font-size: 0.5em;
+	vertical-align: 1.9em;
+	margin-right: 0.6em;
+}
+
+.dict-djs  Appendix-Mincho {
+	font-family: "Hiragino Mincho ProN";
+}
+
+.dict-djs  Appendix-アクセント項G {
+	display: block;
+}
+
+.dict-djs  Appendix-アクセント項G.TM {
+	margin-top: 1em;
+}
+
+.dict-djs  Appendix-アクセント囲みG {
+	display: block;
+	border: solid 1px gray;
+	margin-top: 1.4em;
+	margin-bottom: 0.5em;
+	padding: 0.3em;
+}
+
+.dict-djs  Appendix-アクセント囲みタイトル {
+	display: block;
+	font-family: "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+}
+
+.dict-djs  Appendix-アクセントグレー {
+	color: #A0A0A0;
+}
+
+.dict-djs  Appendix-アクセントイメージG {
+	display: block;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+/*MAccentAudioG {
+	display: inline;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0.2em;
+}*/
+
+@media (prefers-color-scheme: dark) {
+	a.blue {
+		color: #0AF;
+	}
+
+	a.blue rect, a.blue circle {
+		border-color: #0AF;
+	}
+
+	a.blue rect.fill, a.blue rect.L3 {
+		background-color: #0AF;
+	}
+	
+	MAccentM {
+		color: #F66;
+	}
+	
+	MAccentSlash {
+		color: #A0A0A0;
+	}
+	
+	rect.fill {
+		color: black;
+		background-color: white;
+	}
+	
+	rect.L3 {
+		color: black;
+		border-style: none;
+		background-color: #C0C0C0;
+	}
+	
+	.補足ロゴG {
+		background-color: white;
+	}
+	
+	.補足ロゴ {
+		background-color: black;
+		color: white;
+		border-top-color: white;
+		border-bottom-color: white;
+	}
+	
+	.季語ロゴ前 {
+		background-color: black;
+		color: white;
+		border-top-color: white;
+		border-bottom-color: white;
+		border-right-color: black;
+	}
+
+	.季語ロゴ後 {
+		background-color: black;
+		color: white;
+		border-top-color: white;
+		border-bottom-color: white;
+		border-left-color: black;
+	}
+
+	.季語ロゴ中 {
+		background-color: black;
+		color: white;
+	}
+	
+	img.gaiji {
+		filter: invert(100%);
+	}
+	
+	Appendix-項目タイトル {
+		background-color: #606060;
+	}
+
+	Appendix-アクセントグレー {
+		color: #808080;
+	}
+	
+	Appendix-字M {
+		color: #777;
+	}
+}

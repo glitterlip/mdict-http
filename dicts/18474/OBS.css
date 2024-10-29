@@ -1,0 +1,336 @@
+/*color: #05c3de*/
+@font-face {
+    font-family: "gaiji";
+    src: url(GaijiHonbun.otf);
+}
+
+@font-face {
+    font-family: "kaikoku";
+    src: url(kaikokuPM-M9N.otf);
+}
+
+.dict-wws  img.hitsujun {
+    display: none;
+    /*是否显示笔顺*/
+    width: 50%;
+}
+
+.dict-wws  span.编号 {
+    display: none;
+}
+
+.dict-wws  body {
+    font-family: "kaikoku";
+}
+
+.dict-wws  span {
+    display: block;
+    line-height: 1.3em;
+}
+
+.dict-wws  kana, span.kanji, ttl {
+    display: none;
+}
+
+.dict-wws  span.title {
+    font-size: 1.3em;
+    margin-top: 0.4em;
+    font-weight: bold;
+    color: #16444a;
+    display: inline-block;
+}
+
+.dict-wws  span.title.sub {
+    font-size: 1.1em;
+    margin-left: 0.5em;
+}
+
+.dict-wws  span.exp {
+    margin-top: 0.2em;
+}
+
+.dict-wws  span.exp.零,
+.dict-wws  span.exp.一 {
+    margin-left: 0.5em;
+}
+
+.dict-wws  span.exp.二 {
+    margin-left: 1em;
+}
+
+.dict-wws  span.exp.三 {
+    margin-left: 1.5em;
+}
+
+.dict-wws  span.exam,
+.dict-wws  span.参见 {
+    margin-left: 1.5em;
+}
+
+.dict-wws  span.exam {
+    color: #197581;
+}
+
+.dict-wws  span.变形,
+.dict-wws  span.参考,
+.dict-wws  span.反义 {
+    margin-left: 1em;
+}
+
+.dict-wws  span.historical_kana {
+    display: inline-block;
+    vertical-align: super;
+    font-size: 0.8em;
+    color: #16444a;
+}
+
+.dict-wws  span.pronunciation {
+    margin-left: 0.5em;
+}
+
+.dict-wws  span.pronunciation.音读:before,
+.dict-wws  span.pronunciation.训读:before {
+    content: "音";
+    color: darkred;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    font-size: 0.7em;
+    font-weight: bold;
+    vertical-align: 0.1em;
+    margin-top: 0.2em;
+}
+
+.dict-wws  span.pronunciation.音读:before {
+    content: "音";
+}
+
+.dict-wws  span.pronunciation.训读:before {
+    content: "訓";
+}
+
+.dict-wws  span.参考:before,
+.dict-wws  span.难读:before,
+.dict-wws  span.人名:before,
+.dict-wws  span.类语:before,
+.dict-wws  span.惯用:before,
+.dict-wws  span.用法:before,
+.dict-wws  span.语源:before,
+.dict-wws  table_title {
+    display: block;
+    width: fit-content;
+    color: darkred;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0em 0.2em;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.dict-wws  table_title {
+    font-size: 1.0em;
+    line-height: 1.3em;
+    border-width: 1px;
+}
+
+.dict-wws  rect.red {
+    display: inline-block;
+    width: fit-content;
+    color: darkred;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0em 0.2em;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    margin-left: 0;
+}
+
+.dict-wws  span.参考:before {
+    content: "参考";
+}
+
+.dict-wws  span.难读:before {
+    content: "難読";
+}
+
+.dict-wws  span.人名:before {
+    content: "人名";
+}
+
+.dict-wws  span.类语:before {
+    content: "類語";
+}
+
+.dict-wws  span.惯用:before {
+    content: "惯用";
+}
+
+.dict-wws  span.用法:before {
+    content: "用法";
+}
+
+.dict-wws  span.语源:before {
+    content: "語源";
+}
+
+.dict-wws  span.难读,
+.dict-wws  span.人名,
+.dict-wws  span.类语,
+.dict-wws  span.惯用 {
+    margin: 0.5em 0 0.5em 1em;
+    font-size: 0.9em;
+    background-color: #f6feff;
+    width: fit-content;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.dict-wws  span.参考,
+.dict-wws  span.历史,
+.dict-wws  span.用法,
+.dict-wws  span.语源 {
+    display: block;
+    margin: 0.7em 0 0.7em 1em;
+    background-color: #f6feff;
+    width: fit-content;
+    border-left-style: solid;
+    border-left-width: thick;
+    border-color: #16444a;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    font-size: 0.9em;
+}
+
+.dict-wws  span.区别表现,
+.dict-wws  span.使用区分 {
+    margin-left: 1em;
+    margin: 0.7em 0 0.7em 1em;
+    background-color: #fffcf6;
+    width: fit-content;
+    border-left-style: solid;
+    border-left-width: thick;
+    border-color: #4a3316;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    font-size: 0.9em;
+}
+
+.dict-wws  span.区分标题 {
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+.dict-wws  span.表现内容,
+.dict-wws  span.区分内容 {
+    margin-left: 0.5em;
+    margin-top: 0.1em;
+}
+
+.dict-wws  span.表现内容 b {
+    margin-left: -1em;
+}
+
+.dict-wws  span.中心义 {
+    margin-left: 1em;
+    font-size: 0.9em;
+}
+
+.dict-wws  span.kanji_level:before {
+    content: "教";
+}
+
+.dict-wws  span.kanji_level {
+    display: inline-block;
+    color: darkred;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0em 0.2em;
+    vertical-align: 0.1em;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.dict-wws  a {
+    text-decoration: none;
+}
+
+.dict-wws  furigana {
+    vertical-align: super;
+    font-size: 0.7em;
+}
+
+.dict-wws  rect {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    font-size: 0.7em;
+    font-weight: bold;
+    vertical-align: 0.1em;
+    margin-left: 0.3em;
+    color: black;
+    text-decoration: none;
+}
+
+.dict-wws  katsuyo,
+.dict-wws  pronunciation {
+    font-family: serif;
+}
+
+.dict-wws  order {
+    font-weight: bold;
+    color: #611f1f;
+    margin-right: 0.2em;
+}
+
+.dict-wws  xmp {
+    display: inline;
+    margin: 0 0.2em;
+    font-family: "kaikoku";
+}
+
+.dict-wws  span.title sup {
+    font-size: 0.5em;
+}
+
+.dict-wws  table {
+    margin-top: 0.5em;
+    margin-left: 2em;
+    border-color: darkred;
+    border-collapse: collapse;
+}
+
+.dict-wws  gaiji {
+    font-family: "gaiji";
+    font-weight: normal;
+}
+
+.dict-wws  img.image {
+    margin-top: 1em;
+    width: 50%;
+}
+
+.dict-wws  img.gaiji {
+    height: 1em;
+    vertical-align: -0.1em;
+}
+
+.dict-wws  subject:before {
+    content: "〘";
+}
+
+.dict-wws  subject:after {
+    content: "〙";
+}
+
+.dict-wws  circle {
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.8em;
+}

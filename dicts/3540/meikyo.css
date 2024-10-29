@@ -1,0 +1,17 @@
+.dict-meikyo body {
+	font-family:"MS PMincho";
+	line-height:1.4em;
+}
+.dict-meikyo .項目 {
+	font-family:"MS PGothic";
+	font-weight:bold;
+	font-size:120%;
+}
+.dict-meikyo .用例 {
+	font-family:"MS PMincho";
+	color: #009999;
+}
+.dict-meikyo .語釈 {
+	font-family:"MS PGothic";
+
+}

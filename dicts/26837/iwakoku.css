@@ -1,0 +1,220 @@
+/*@font-face {font-family:"Ten Mincho Text";src:url("Ten Mincho Text Regular.otf") format("opentype");}*/
+
+.dict-yb  body {
+    line-height: 1.5em;
+    font-family: "Ten Mincho Text", "Source Han Serif JP", "Yu Mincho", FSung-2;
+    padding-left: 20px;
+}
+
+.dict-yb  hr {
+    margin-top: 20px;
+    border: 0px solid grey;
+}
+
+.dict-yb  img {
+    max-width: 99%;
+}
+
+.dict-yb  .genso:after {
+    content: "。";
+}
+
+.dict-yb  .taigi:before {
+    content: "↔";
+}
+
+.dict-yb  .midashi { /* 詞頭 */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: -20px;
+    margin-bottom: 10px;
+}
+
+.dict-yb  .kanji { /* 詞頭的漢字 */
+    font-weight: bold;
+}
+
+.dict-yb  .midashikana { /* 詞頭的片假名 */
+    /*	font-family:"Yu Gothic";*/
+    font-weight: bold;
+}
+
+.dict-yb  .onkun_onlist {
+    font-size: 0.7em;
+    display: block;
+    margin-left: 1em;
+}
+
+.dict-yb  .onkun_on + .onkun_on:before {
+    content: "・";
+}
+
+.dict-yb  .kaisetu {
+    margin-left: 0em;
+}
+
+.dict-yb  .blkda {
+    margin-left: 0em;
+}
+
+.dict-yb  .blkda .blktyu, .blktyu .blksho, .blksho .blkbi {
+    margin-left: 1em;
+}
+
+.dict-yb  .tyuki {
+    background: #f2f2f2;
+}
+
+.dict-yb  .blkda .tyuki, .blktyu .tyuki, .blksho .tyuki {
+    background: #f2f2f2;
+    margin-left: 1em;
+}
+
+.dict-yb  ruby {
+    /*	display: inline;*/
+}
+
+.dict-yb  .senmon {
+    color: green;
+    font-family: "Yu Gothic";
+    font-weight: bold;
+}
+
+.dict-yb  .hinshi {
+    font-family: "Yu Gothic";
+    font-weight: bold;
+}
+
+.dict-yb  .sup, .sup2 {
+    vertical-align: super;
+    font-size: 0.7em;
+}
+
+.dict-yb  .sub, .sub2 {
+    vertical-align: sub;
+    font-size: 0.7em;
+}
+
+.dict-yb  a { /* 跳轉 */
+    padding-left: 2px;
+    text-decoration: none;
+}
+
+
+.dict-yb  .dic_title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.dict-yb  .contents_title {
+    font-weight: bold;
+    padding: 5px;
+    background-color: #FFCCFF;
+}
+
+.dict-yb  .gazou {
+
+}
+
+.dict-yb  .contents_title2 {
+    color: #F00;
+}
+
+.dict-yb  .imagegaiji {
+    height: 1em;
+    vertical-align: baseline;
+}
+
+.dict-yb  .icon {
+    width: 0.5em;
+    height: 0.5em;
+    display: inline-block;
+    vertical-align: text-top;
+    line-height: 1em;
+}
+
+.dict-yb  .icon2 {
+    height: 1em;
+    /*	transform: rotate(270deg);*/
+    display: inline-block;
+    vertical-align: text-top;
+    line-height: 1em;
+    vertical-align: -0.15em;
+}
+
+.dict-yb  .nengou {
+    font-weight: bold;
+    color: #F00;
+}
+
+.dict-yb  .font {
+    color: #F00;
+}
+
+.dict-yb  .ruby {
+    font-size: 0.7em;
+}
+
+.dict-yb  .img {
+    height: 1em;
+}
+
+.dict-yb  .imgicon {
+    zoom: 0.7;
+}
+
+.dict-yb  .imgicon2 {
+    zoom: 0.8;
+}
+
+.dict-yb  .rekisikana {
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-size: 0.6em;
+    line-height: 1em;
+}
+
+.dict-yb  .entity {
+    height: 1em;
+    vertical-align: -0.15em;
+}
+
+.dict-yb  .entity[src*="KG092080"], .entity[src*="KG003560"], .entity[src*="b125_t"], .entity[src*="b126_t"], .entity[src*="KG003173"] {
+    transform: rotate(-90deg);
+}
+
+.dict-yb  .rubiyomi {
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-size: 0.6em;
+    line-height: 1em;
+}
+
+.dict-yb  .ue {
+    display: inline-block;
+    vertical-align: text-top;
+    font-size: 0.6em;
+    line-height: 1em;
+}
+
+.dict-yb  .josi {
+    font-size: 0.8em;
+}
+
+.dict-yb  .midashi1 {
+    padding-left: 1rem;
+    text-indent: -1rem;
+}
+
+.dict-yb  .midashi2 {
+    padding-left: 1rem;
+    text-indent: -0.5rem;
+}
+
+.dict-yb  .midashi3 {
+    margin-left: 4rem;
+}
+
+.dict-yb  .kanji, .kanji_kyuji, .kanji_itai, .kanji_kyoyo {
+    font-size: 1.2em;
+}

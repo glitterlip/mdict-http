@@ -1,0 +1,154 @@
+/* 
+
+小学馆日中辞典第三版 - FORUM.FREEMDICT.COM
+
+仅供学习试读，禁止转载，禁止以任何形式再次分发或传播，禁止用于任何盈利目的。
+
+*/
+
+.dict-shk body {
+    font-size: 14px;
+    font-family: "FZYouSong GBK";
+    margin: 0px;
+    padding: 3px;
+
+}
+
+.dict-shk h1 {
+    font-size: 150%;
+}
+
+
+.dict-shk h3 {
+    font-size: 140%;
+    margin: 4px;
+    padding: 0px;
+}
+
+.dict-shk p {
+    margin: 4px;
+}
+
+.dict-shk div {
+    font-size: 14px;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    color: text;
+}
+
+.dict-shk .wr {
+    font-size: 140%;
+}
+
+.dict-shk .pinyin {
+    display: none;
+}
+
+.dict-shk .pinyin_h {
+    padding-left: 12px;
+    color: gray;
+    font-size: 80%;
+}
+
+
+.dict-shk p[data-orgtag="meaning"] b {
+    color: #229122 !important;
+}
+
+
+.dict-shk p[data-orgtag="example"] {
+    color: #007B7B;
+    margin: 3px;
+}
+
+.dict-shk span[type="語義区分2"] {
+    color: red;
+}
+
+.dict-shk div[data-orgtag="column"]::after {
+    content: "♥";
+    color: purle;
+}
+
+
+.dict-shk span.black-square {
+    color: #fff;
+    background: #D7514A;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+
+.dict-shk span.white-square {
+    color: black;
+    padding: 2px 5px;
+    margin-left: 2px;
+    font-size: 0.85em;
+    background: gold;
+}
+
+
+.dict-shk span.sx {
+    font-size: 60%;
+    color: #FF1D8F;
+}
+
+.dict-shk div[data-orgtag="subheadword"] {
+    margin: 20px 0 4px 0;
+    color: #229122 !important;
+}
+
+.dict-shk div[data-orgtag="subheadword"][type="複合語"]::before {
+    content: "複合語";
+    color: black !important;
+    background: antiquewhite;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+.dict-shk div[data-orgtag="subheadword"][type="慣用句"]::before {
+    content: "慣用句";
+    color: black !important;
+    background: antiquewhite;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+
+.dict-shk div[data-orgtag="subhead"] {
+    margin: 5px;
+    font-weight: bold;
+    display: block;
+    color: black !important;
+}
+
+.dict-shk div[data-orgtag="subheadword"] {
+    font-weight: bold;
+    color: #f55d5d !important;
+    display: inline;
+    padding-right: 10px;
+}
+
+.dict-shk jae {
+    color: #0B4CE5 !important;
+    padding-left: 10px;
+}
+
+.dict-shk jae::before {
+    content: "‣ ";
+}
+
+.dict-shk ja_cn {
+    padding-left: 10px;
+    font-style: normal;
+    display: inline;
+    color: grey;
+}
+
+.dict-shk .subhw_meaning {
+    display: inline;
+    color: grey;
+}

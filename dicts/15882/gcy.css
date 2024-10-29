@@ -1,0 +1,294 @@
+.dict-gcy  p {
+	padding-left:1em;
+	text-indent:1em;
+}
+.dict-gcy  .page_movement_img
+{
+	margin: 12px 20px 3px -10px;
+	vertical-align:middle;
+	height:1.0em;
+	border:0;
+	float:right;
+}
+.dict-gcy  .midashi,.dict-gcy  .usermidashi {
+	color:$midashi-color$;
+	/*
+	font-family:$midashi-font-family$;
+	*/
+	font-size:$midashi-font-size$;
+}
+.dict-gcy  .conti {
+	/*background-color:#f0f0f0;*/
+	border-top:3px solid #403f3f;
+}
+.dict-gcy  .honbun {
+}
+.dict-gcy  .katsuyou {
+	padding:10px;
+	border-collapse:collapse;
+	border:1px solid #000;
+	background-color:#EEE;
+	color:#000;
+}
+.dict-gcy  .katsuyou td {
+	padding:3px 10px;
+}
+.dict-gcy  .katsuyou_title {
+	font-weight:bold;
+	font-size:1.1em;
+}
+.dict-gcy  .kigou
+{
+	color:#FF0000;
+	background-color:#FFFFFF;
+	height:1.0em;
+	border:0;
+	vertical-align:text-bottom;
+	margin: 3px;
+}
+.dict-gcy  .kigou[data="g_yokobou.svg"] {
+	height:0.6em;
+	margin:0 0 3px 0;
+}
+.dict-gcy  .kigou[data="autocarril_1.svg"] {
+	height:0.7em;
+	margin:0 0 0 0;
+}
+.dict-gcy  .kigou[data="alfeizar.svg"] {
+	height:1em;
+	margin:0 0 1px 0;
+}
+.dict-gcy  .contents {
+	border-bottom:1px solid #888;
+	/*margin-bottom:12px;*/
+}
+.dict-gcy  .media {
+	color:#999999;
+	font-size:0.8em;
+}
+.dict-gcy  .FIGc,.dict-gcy  .FIGs {
+
+}
+.dict-gcy  .dict-gcy  .FIGm {
+	height:1em;
+}
+.dict-gcy  .FIGm[src*="009"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="010"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="011"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="012"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="013"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="014"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="015"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="016"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="023"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="024"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="025"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="026"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="027"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="028"] {
+	height:2em;
+}
+.dict-gcy  .FIGm[src*="039"] {
+	height:2em;
+}
+/****************************/
+/*          Search          */
+/****************************/
+.dict-gcy  .Search {
+	overflow:hidden;
+	background-color:#EEEEEE;
+	padding:3px;
+}
+.dict-gcy  .TopBox {
+	padding: 10px 20px 10px 10px;
+	background-color: #FFFFFF;
+	border-top: inset 1px #999999;
+	border-right: inset 1px #999999;
+	border-bottom: solid 2px #777777;
+	border-left: inset 1px #999999;
+}
+.dict-gcy  .MainBox {
+	position:relative;
+	top:0px;
+	bottom:0px;
+	margin:0;
+	padding:1px;
+	background-color:#FFFFFF;
+	overflow:auto;
+	border-right: inset 1px #999999;
+	border-bottom: inset 1px #999999;
+	border-left: inset 1px #999999;
+}
+.dict-gcy  .ResultBox {
+	position:relative;
+}
+.dict-gcy  .a_link {
+	margin-left:1em;
+}
+/******** SearchResult Item ************/
+.dict-gcy  .ResultDiv {
+	background-color:#ffffff;
+	padding: 5px 0px;
+	white-space: nowrap;
+	border-bottom:1px solid #DDDDDD;
+}
+.dict-gcy  .ResultSpan {
+	cursor:default;
+	padding-left:10px;
+}
+.dict-gcy  .ResultTitleSpan {
+	cursor:default;
+	padding-left:10px;
+	color:#888888;
+	font-size:0.7em;
+}
+.dict-gcy  .key {
+	font-weight:bold;
+	/*color:#DD0000;*/
+}
+.dict-gcy  .hit {
+	color:#DD0000;
+}
+.dict-gcy  .ResultDiv p {
+	margin:0;
+	padding:0;
+	text-indent:0;
+}
+.dict-gcy  .ResultDiv:hover .ResultTitleSpan,
+.dict-gcy  .ResultDiv:hover .key {
+	color:#FFFFFF;
+}
+.dict-gcy  .CountDiv {
+	background-color:#ffffff;
+	width: 100%;
+	padding: 5px 0px;
+	white-space: nowrap;
+	border-bottom:3px solid #DDDDDD;
+}
+.dict-gcy  .CountSpan {
+	padding-left:10px;
+	font-size:12px;
+	color:#7f7f7f;
+}
+.dict-gcy  .text {
+	margin-bottom:3px;
+	width:100%;
+}
+.dict-gcy  body,tr,td	{
+	font-weight: normal
+	}
+.dict-gcy  .midashi_tyuui {  font-weight: bold; color: #990000}
+.dict-gcy  .caution {  color: #990000}
+.dict-gcy  .contents{
+	margin-left:16px;}
+.dict-gcy  .contents2{
+	margin-left:26px;}
+.dict-gcy  .right_topmenu{
+	font-size:10px;
+	text-align:right;}
+.dict-gcy  .yomi{
+	font-size:10px;}
+.dict-gcy  .head {
+	line-height:3em;
+	padding-left:1em;
+}
+
+.dict-gcy  .textbg { 	background-color: #FF9933; }
+.dict-gcy  .copyright {
+	font-weight: normal
+	}
+
+.dict-gcy  img.obj,.dict-gcy  img.icon, img.gaiji {
+	height: 1em;
+	vertical-align: -0.13em;
+}
+
+.dict-gcy  .dict-gcy  sub.rubi {
+	font-size: 0.7em;
+}
+
+.dict-gcy  q.kenten2 {
+	-webkit-text-emphasis-style: circle open;
+}
+
+.dict-gcy  q.kente {
+	-webkit-text-emphasis-style: circle;
+}
+
+.dict-gcy  q.bousen1 {
+	text-decoration-line: overline; 
+}
+
+.dict-gcy  q.kenten2:before, q.kente:before {
+	content: none;
+}
+
+.dict-gcy  q.kenten2:after, q.kente:after {
+	content: none;
+}
+
+.dict-gcy  q.siki:before {
+	content: "「";
+}
+
+.dict-gcy  q.siki:after {
+	content: "」";
+}
+
+.dict-gcy  q.bousen1:before {
+	content: none;
+}
+
+.dict-gcy  q.bousen1:after {
+	content: none;
+}
+
+.dict-gcy  a:link {
+	color: #5066d4;
+	text-decoration: none;
+}
+
+.dict-gcy  a:hover, a:focus, a:active {
+	color: #e4671b;
+}
+
+.dict-gcy  a.self {
+	color: inherit;
+	text-decoration: inherit;
+	cursor: inherit;
+	pointer-events: none;
+}
+
+.dict-gcy  .title {
+	display: none;
+}
+
+.dict-gcy  .alpha-honbun {
+	margin-left: 1em;
+}

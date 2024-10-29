@@ -1,0 +1,334 @@
+
+/*标题*/
+.dict-xsg3  .dict-xsg3  h3	{
+	font-size: 20px;
+    font-weight:100;
+	background-color:;
+	border-bottom:0.2mm solid;
+	margin:0px 0px 25px;
+}
+.dict-xsg3  .dict-xsg3  div.xxg-entry{
+	font-size:15px;
+    font-family: NotoSerifJP-ExtraLight,serif;
+}
+
+.dict-xsg3  div.excf{
+	font-size:15px;
+}
+
+
+.dict-xsg3  section.description{
+	font-size:15px;
+}
+
+
+.dict-xsg3  hw{
+
+.dict-xsg3  font-family: PingFangSC-Light,sans-serif;
+}
+
+
+/*下面是词头的拼音，建议显示，用以区分多音字*/
+.dict-xsg3  pinyin{
+	color:;
+    font-weight:lighter;
+}
+/*下面是解释内的拼音*/
+.dict-xsg3  .pinyin{
+	display:none;
+}
+
+
+.dict-xsg3  p[data-orgtag="example"]{
+.dict-xsg3  color: #000;
+.dict-xsg3  font-weight:100;
+.dict-xsg3  font-size:15px;
+.dict-xsg3  margin:0px;
+}
+
+
+
+
+.dict-xsg3  p[data-orgtag="example"]::before{
+	content:"\2003\2003::"; 
+	}
+
+.dict-xsg3  p[data-orgtag="meaning"]  {
+	color:black;
+	font-size:15px;
+    font-weight:lighter;
+}
+.dict-xsg3  p[data-orgtag="meaning"] span[data-orgtag="column"]{
+	border:0.2mm solid #ddd;
+ font-size:1rem;
+}
+
+
+.dict-xsg3  div[data-orgtag="column"]{
+	border:0.2mm solid #ddd;
+	font-weight:lighter;
+}
+/*
+.dict-xsg3  div[data-orgtag="column"] p{
+	border:0.2mm solid #ddd;
+	font-weight:lighter;
+	
+		 font-size:0.8rem;
+		 margin:0px;
+}*/
+/*
+下面这条控制div.column下的 p.meaning
+.dict-xsg3  div[data-orgtag="column"] p[data-orgtag="meaning"]{
+	border:0.2mm solid #ddd;
+	font-weight:lighter;
+		background-color:pink;
+		 font-size:0.8rem;
+		 margin:0px;
+}
+*/
+
+.dict-xsg3  div[data-orgtag="column"][type="注意"]::before{
+	content:"注意";
+	display:block;
+	background-color:#ddd;
+	border-radius:10px 10px 0px 0px;
+	padding-left:10px;
+}
+.dict-xsg3  div[data-orgtag="column"][type="注意"] {
+	font-size:1rem;
+	border-radius:10px 10px 10px 10px;
+}
+
+
+.dict-xsg3  div[data-orgtag="column"][type="比較"]::before{
+	content:"比較";
+	display:block;
+	background-color:#ddd;
+	border-radius:10px 10px 0px 0px;
+	padding-left:10px;
+}
+.dict-xsg3  div[data-orgtag="column"][type="比較"]{
+	font-size:1rem;
+	border-radius:10px 10px 10px 10px;
+}
+
+
+.dict-xsg3  div[data-orgtag="column"][type="語法"]::before{
+	content:"語法";
+	display:block;
+	background-color:#ddd;
+	border-radius:10px 10px 0px 0px;
+	padding-left:10px;
+}
+.dict-xsg3  div[data-orgtag="column"][type="語法"]{
+	font-size:1rem;
+	border-radius:10px 10px 10px 10px;
+}
+
+
+
+
+.dict-xsg3  ref[type="コラム"]{
+.dict-xsg3  border:0.2mm solid #eddba6;
+.dict-xsg3  border-spacing: 10px 5px;
+ font-size:16px;
+	/*border-radius:10px 10px 10px 10px;*/
+	background-color:#fefdfa;
+	padding-left:10px;
+}
+
+
+
+.dict-xsg3  div[data-orgtag="column"][type="汉语小知识"],div[data-orgtag="column"][type="語法ノート"],div[data-orgtag="column"][type="動作動詞"],div[data-orgtag="column"][type="生活と文化"]{
+	font-size:1rem;
+	border-radius:10px 10px 10px 10px;
+	border:0.2mm solid #eddba6;
+	background-color:#fefdfa;
+	padding:0px 0px;
+}
+
+
+.dict-xsg3  span[type="量詞"]{display:inline;
+.dict-xsg3  color:black;background-color:#eee;
+}
+
+.dict-xsg3  span[type="量詞"]::before{content:"📜量詞: ";
+.dict-xsg3  color:black;background-color:#ddd;
+}
+
+/*
+没用
+.dict-xsg3  div[data-orgtag="column"][ memo="属"][ type="動作動詞"]::before {	content:"[動作動詞]";display:block;background-color:#eee;
+}
+*/
+/*下面一条修饰 注意、比较*/
+.dict-xsg3  div[data-orgtag="column"]  {	background-color:#fefdfa;
+.dict-xsg3  font-weight:lighter!important;
+.dict-xsg3  border:0.2mm solid #ddd;
+.dict-xsg3  padding:0px 0px 0px 0px; 
+.dict-xsg3  font-family: NotoSerifJP-ExtraLight,serif; PingFangSC-Light,sans-serif;
+}
+
+/*下面这条【色刷り】是我挖出来的坑，我不会修了
+.dict-xsg3  p[data-orgtag="meaning"] em[type="色刷り"]{
+.dict-xsg3  color:blue;background-color:red;
+}
+
+.dict-xsg3  em[type="色刷り"]{
+
+.dict-xsg3  color:blue;background-color:red;font-weight:2rem;
+}
+.dict-xsg3  em[type="色刷り"]::before{content:"色刷り";display:block;
+.dict-xsg3  color:black;background-color:#ddd;
+}*/
+
+
+
+
+
+
+/*
+.dict-xsg3  p[data-orgtag="meaning"] {
+.dict-xsg3  color: black;
+.dict-xsg3  font-weight:100;
+.dict-xsg3  font-size:24px;
+.dict-xsg3  margin:0px;
+}
+*/
+.dict-xsg3  p[data-orgtag="meaning"] {
+.dict-xsg3  margin:0px;
+}
+.dict-xsg3  p[data-orgtag="meaning"][level="1"]{
+.dict-xsg3  padding-left:0px;
+}
+.dict-xsg3  p[data-orgtag="meaning"][level="2"]{
+.dict-xsg3  padding-left:10px;
+}
+.dict-xsg3  p[data-orgtag="meaning"][level="3"]{
+.dict-xsg3  padding-left:25px;
+}
+.dict-xsg3  p[data-orgtag="meaning"][level="4"]{
+.dict-xsg3  padding-left:50px;
+}
+
+
+
+
+
+.dict-xsg3  p[data-orgtag="meaning"][level="C1"]{
+.dict-xsg3  padding-left:0px;
+}
+.dict-xsg3  p[data-orgtag="meaning"][level="C2"]{
+.dict-xsg3  padding-left:15px;
+}
+.dict-xsg3  p[data-orgtag="meaning"][level="C3"]{
+.dict-xsg3  padding-left:10px;
+}
+
+
+
+
+
+
+.dict-xsg3  p[data-orgtag="meaning"][type="下接"],p[data-orgtag="meaning"][type="成語"],p[data-orgtag="meaning"][type="地名"],p[data-orgtag="meaning"][type="人名"],p[data-orgtag="meaning"][type="異読"]{
+	border:0.2mm solid #eddba6;
+	color:green;
+	font-size:16px;
+	background-color:#fefdfa;
+	margin:5px 0px;
+}
+.dict-xsg3  p[data-orgtag="meaning"][type="語法"],p[data-orgtag="meaning"][type="比較"],p[data-orgtag="meaning"][type="日中"],p[data-orgtag="meaning"][type="注意"],p[data-orgtag="meaning"][type="参考"],p[data-orgtag="meaning"][type="発音"],p[data-orgtag="meaning"][type="語源"]{
+	border:0.2mm solid #eddba6;
+	border-spacing: 10px 5px;
+	font-size:16px;
+	background-color:#fefdfa;
+
+}
+
+
+
+.dict-xsg3  a{color:black;
+	font-weight:lighter!important;
+	font-size:14px;
+	text-decoration:none;  
+
+}
+
+.dict-xsg3  span.column-title{
+	display:block;
+	background-color:#eee;
+	border:none;
+	color:#000;
+	font-weight:lighter;
+	/*border:0.2mm solid pink;*/
+    font-size:1rem;
+
+
+}
+
+
+
+.dict-xsg3  .column-title::before{
+/*	content:"🔑" ;*/
+	display:block;
+	/*background-color:pink;*/
+	border:none;
+	color:black;
+	font-size:1rem;
+}
+
+
+
+
+
+/*white square*/
+.dict-xsg3  span.white-square{
+	border:0.2mm solid;
+	background-color:white;
+	color:black;
+}
+/*black square*/
+.dict-xsg3  span.black-square{
+	border:solid black;
+	background-color:black;
+	color:white;
+}
+
+
+/* b标签夹着的标签 <p class="meaning">  */
+
+.dict-xsg3  p[data-orgtag="meaning"] b{
+	color: black;
+.dict-xsg3  font-weight:600 !important;
+.dict-xsg3  font-family:"Noto Serif CJK CN","Source Han Serif CN";}
+
+.dict-xsg3  p[data-orgtag="meaning"] p{
+	color: black;
+.dict-xsg3  font-weight:600 !important;
+.dict-xsg3  font-family:"Noto Serif CJK CN","Source Han Serif CN";}
+
+
+.dict-xsg3  .meaning b::before,.meaning b::after{
+	content:"\2004" ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
