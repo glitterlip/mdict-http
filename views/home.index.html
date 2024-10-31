@@ -1,10 +1,10 @@
 {% extends "layouts.app.html" %}
 
 {% block content %}
-<div class="flex flex-col justify-center items-center h-screen" x-data="mdict">
-    <div class="flex">
-        <input type="text" placeholder="word to search" x-model="keyword" class="input input-bordered w-[40vw]"/>
-        <button class="btn" @click="search">Search</button>
+<div class="flex flex-col justify-center items-center min-h-screen" x-data="mdict">
+    <div class="join join-horizontal mt-[30vh]">
+        <input type="text" placeholder="word to search" x-model="keyword" class="join-item	input input-bordered w-[30vw]"/>
+        <button class="btn join-item" @click="search">Search</button>
     </div>
     <div class="flex sm:max-w-[60vw] px-8 flex-wrap">
         <template x-for="dict in dicts">
@@ -14,14 +14,16 @@
             </label>
         </template>
     </div>
-    <div role="tablist" class="tabs tabs-lifted">
+    <div class="grow">
+        <div role="tablist" class="tabs tabs-lifted">
+            <template x-for="result in results">
+                <a role="tab" @click="active=result.id" class="tab" x-text="result.name" :class="active == result.id?'tab-active':''"></a>
+            </template>
+        </div>
         <template x-for="result in results">
-            <a role="tab" @click="active=result.id" class="tab" x-text="result.name" :class="active == result.id?'tab-active':''"></a>
+            <div :class="(active == result.id?'':'hidden')+' '+(result.meta.rootCls?result.meta.rootCls:'')" x-html="result.result"></div>
         </template>
     </div>
-    <template x-for="result in results">
-        <div :class="(active == result.id?'':'hidden')+' '+(result.meta.rootCls?result.meta.rootCls:'')" x-html="result.result"></div>
-    </template>
 </div>
 {% endblock %}
 
