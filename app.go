@@ -126,14 +126,17 @@ func main() {
 		return c.JSON(result)
 	})
 	app.Post("/api/analyse", func(c fiber.Ctx) error {
-		tagger, _ := mecab.New(map[string]string{"output-format-type": "wakati"})
+		tagger, e := mecab.New(map[string]string{"output-format-type": "wakati"})
+		fmt.Println(e)
 		defer tagger.Destroy()
 		format := c.FormValue("format")
 		if format == "lattice" {
-			lattice, _ := mecab.NewLattice()
+			lattice, e := mecab.NewLattice()
+			fmt.Println(e)
 			defer lattice.Destroy()
 			lattice.SetSentence(c.FormValue("sentence"))
-			_ = tagger.ParseLattice(lattice)
+			e = tagger.ParseLattice(lattice)
+			fmt.Println(e)
 			r := lattice.String()
 			return c.JSON(map[string]interface{}{
 				"success":    true,
@@ -141,7 +144,8 @@ func main() {
 				"data":       strings.Split(r, "\n"),
 			})
 		}
-		result, _ := tagger.Parse(c.FormValue("sentence"))
+		result, e := tagger.Parse(c.FormValue("sentence"))
+		fmt.Println(e)
 		return c.JSON(map[string]interface{}{
 			"success":    true,
 			"errMessage": "",
