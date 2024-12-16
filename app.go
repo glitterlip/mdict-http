@@ -130,6 +130,7 @@ func main() {
 		fmt.Println(e)
 		defer tagger.Destroy()
 		format := c.FormValue("format")
+		fmt.Println(c.FormValue("sentence"))
 		if format == "lattice" {
 			lattice, e := mecab.NewLattice()
 			fmt.Println(e)
