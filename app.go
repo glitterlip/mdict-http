@@ -9,6 +9,7 @@ import (
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/template/django/v3"
 	"github.com/google/uuid"
+	"github.com/shogo82148/go-mecab"
 	"io"
 	"log"
 	"mdict-http/services/dict"
@@ -123,6 +124,30 @@ func main() {
 
 		}
 		return c.JSON(result)
+	})
+	app.Post("/api/analyse", func(c fiber.Ctx) error {
+		tagger, _ := mecab.New(map[string]string{"output-format-type": "wakati"})
+		defer tagger.Destroy()
+		format := c.FormValue("format")
+		if format == "lattice" {
+			lattice, _ := mecab.NewLattice()
+			defer lattice.Destroy()
+			lattice.SetSentence(c.FormValue("sentence"))
+			_ = tagger.ParseLattice(lattice)
+			r := lattice.String()
+			return c.JSON(map[string]interface{}{
+				"success":    true,
+				"errMessage": "",
+				"data":       strings.Split(r, "\n"),
+			})
+		}
+		result, _ := tagger.Parse(c.FormValue("sentence"))
+		return c.JSON(map[string]interface{}{
+			"success":    true,
+			"errMessage": "",
+			"data":       strings.Split(strings.ReplaceAll(result, "\n", ""), " "),
+		})
+
 	})
 	port := os.Getenv("MDICT_PORT")
 	if port == "" {

@@ -29,6 +29,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
+	github.com/shogo82148/go-mecab v0.0.8 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.57.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
